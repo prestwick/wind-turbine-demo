@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="520A247F70773C9E0EEF2B64ACBDEA5F" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="501CA40EE31228885DCF70E5728F94EB" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.7.0.1959" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.7.0.0" MinimumSemanticallyEquivalentVersion="4.7.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.7.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.7.0.1959" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.7.0.0" MinimumSemanticallyEquivalentVersion="4.7.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.7.0.49152" />
@@ -41,122 +41,92 @@
 			<NodeLabel AttachedTo="148" Bounds="45 0 30 15" Id="151" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Url Image</p.Text>
 			</NodeLabel>
+			<DataAccessor Bounds="85 200 40 15" DataItem="36" Id="37" Label="40">
+				<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="37" Bounds="36 200 44 14" Id="40" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>List Box</p.Text>
+			</NodeLabel>
 		</DiagramUnplacedItems>
 		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" />
 		<BlockDiagram Id="12">
-			<WhileLoop Bounds="220 450 416 736" DiagramId="43" Id="42">
-				<LoopIteration Bounds="5 706 15 15" Id="44" />
-				<LoopCondition Bounds="375 335 15 15" Id="45" />
-				<Literal Bounds="310 295 25 15" DataType="Boolean" Facade="False Constant" Id="46" xmlns="http://www.ni.com/MocCommon">
+			<WhileLoop Bounds="110 450 405 410" DiagramId="43" Id="42">
+				<LoopIteration Bounds="5 380 15 15" Id="44" />
+				<LoopCondition Bounds="375 380 15 15" Id="45" />
+				<Literal Bounds="310 340 25 15" DataType="Boolean" Facade="False Constant" Id="46" xmlns="http://www.ni.com/MocCommon">
 					<p.Data>False</p.Data>
 					<BooleanBehavior />
 				</Literal>
-				<Wire Id="47" Joints="N(46:Out)|(335,300) h(30) v(40) N(45:Input)|(375,340)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wait Bounds="120 15 30 30" Id="48" />
+				<Wire Id="47" Joints="N(46:Out)|(335,345) h(30) v(40) N(45:Input)|(375,385)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wait Bounds="110 15 30 30" Id="48" />
 				<Literal Bounds="40 25 45 16" DataType="UInt32" Facade="Numeric" Id="49" xmlns="http://www.ni.com/MocCommon">
 					<p.Data>250</p.Data>
 					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 				</Literal>
-				<Wire Id="50" Joints="N(49:Out)|(85,30) N(48:time to wait)|(120,30)" xmlns="http://www.ni.com/PlatformFramework" />
-				<DataAccessor Bounds="245 175 40 15" DataItem="15" Id="16" Label="27" xmlns="http://www.ni.com/MocCommon">
-					<Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="50" Joints="N(49:Out)|(85,30) N(48:time to wait)|(110,30)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="170 340 40 15" DataItem="15" Id="16" Label="27" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
-				<NodeLabel AttachedTo="16" Bounds="290 175 31 14" Id="27" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="16" Bounds="215 340 31 14" Id="27" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Chart</p.Text>
 				</NodeLabel>
-				<Literal Bounds="40 205 45 16" DataType="Double" Facade="Numeric" Id="51" xmlns="http://www.ni.com/MocCommon">
+				<Literal Bounds="40 280 45 16" DataType="Double" Facade="Numeric" Id="51" xmlns="http://www.ni.com/MocCommon">
 					<p.Data>0x4059000000000000</p.Data>
 					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 				</Literal>
-				<Add Bounds="120 170 30 30" Id="52" Terminals="o=80, c0t0v=53, c1t0v=55" />
-				<Wire Id="53" Joints="N(51:Out)|(85,210) h(10) B(1) h(5) B(2) N(58:c0t0v)|(120,210) B(2) v(-35) B(4) N(52:c0t0v)|(120,175) B(4) v(-65) B(6) N(76:c0t0v)|(120,110) B(6) v(-35) N(69:c0t0v)|(120,75) B(1) v(50) N(65:c0t0v)|(120,260)" xmlns="http://www.ni.com/PlatformFramework" />
-				<RandomNumber Bounds="45 175 30 30" Id="54" />
-				<Wire Id="55" Joints="N(54:number (0 to 1\))|(75,190) N(52:c1t0v)|(120,190)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="56" Joints="N(60:number (0 to 1\))|(75,240) h(25) v(-15) N(58:c1t0v)|(120,225)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Add Bounds="120 205 30 30" Id="58" Terminals="o=81, c0t0v=53, c1t0v=56" />
-				<RandomNumber Bounds="45 225 30 30" Id="60" />
-				<Wire Id="63" Joints="N(71:number (0 to 1\))|(75,90) N(69:c1t0v)|(120,90)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Add Bounds="120 255 30 30" Id="65" Terminals="o=82, c0t0v=53, c1t0v=67" />
-				<RandomNumber Bounds="45 260 30 30" Id="66" />
-				<Wire Id="67" Joints="N(66:number (0 to 1\))|(75,275) N(65:c1t0v)|(120,275)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Add Bounds="120 70 30 30" Id="69" Terminals="o=134, c0t0v=53, c1t0v=63" />
-				<RandomNumber Bounds="45 75 30 30" Id="71" />
-				<Wire Id="74" Joints="N(78:number (0 to 1\))|(75,125) N(76:c1t0v)|(120,125)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Add Bounds="120 105 30 30" Id="76" Terminals="o=84, c0t0v=53, c1t0v=74" />
-				<RandomNumber Bounds="45 110 30 30" Id="78" />
-				<Wire Id="80" Joints="N(52:o)|(150,185) h(25) v(25) N(93:c0t0v)|(185,210)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="81" Joints="N(58:o)|(150,220) N(93:c1t0v)|(185,220)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="82" Joints="N(65:o)|(150,270) h(25) v(-30) B(2) N(93:c3t0v)|(185,240) B(2) v(-10) N(93:c2t0v)|(185,230)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="84" Joints="N(76:o)|(150,120) h(20) B(1) N(122:x)|(190,120) B(1) v(130) N(93:c4t0v)|(185,250)" xmlns="http://www.ni.com/PlatformFramework" />
-				<InsertIntoArray Bounds="185 175 40 80" Id="93" Terminals="inArray=101, outArray=106, index0, c0t0v=80, c1t0v=81, c2t0v=82, c3t0v=82, c4t0v=84" VerticalChunkCount="5" />
-				<ArrayLiteral Bounds="60 140 101 26" DataType="Double[]" Facade="Array" Id="99" xmlns="http://www.ni.com/MocCommon">
-					<p.Data>null</p.Data>
-					<ArrayBehavior ElementType="Double" IndexEditorWidth="42">
-						<p.DefaultElementValue>0x0</p.DefaultElementValue>
-					</ArrayBehavior>
-					<Literal Bounds="47 5 40 16" DataType="Double" Facade="Numeric" Id="100">
-						<p.Data>0x0</p.Data>
-						<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-					</Literal>
-				</ArrayLiteral>
-				<Wire Id="101" Joints="N(99:Out)|(161,145) h(14) v(35) N(93:inArray)|(185,180)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="106" Joints="N(93:outArray)|(225,180) N(16:Value)|(248,180)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Literal Bounds="115 50 40 16" DataType="Double" Facade="Numeric" Id="116" xmlns="http://www.ni.com/MocCommon">
+				<Wire Id="63" Joints="N(71:number (0 to 1\))|(75,315) N(69:c1t0v)|(110,315)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Add Bounds="110 295 30 30" Id="69" Terminals="o=134, c0t0v=968, c1t0v=63" />
+				<RandomNumber Bounds="45 300 30 30" Id="71" />
+				<Literal Bounds="105 330 40 16" DataType="Double" Facade="Numeric" Id="116" xmlns="http://www.ni.com/MocCommon">
 					<p.Data>0x4008000000000000</p.Data>
 					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 				</Literal>
-				<DataAccessor Bounds="120 295 40 15" DataItem="36" Id="37" Label="40" xmlns="http://www.ni.com/MocCommon">
-					<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-				</DataAccessor>
-				<NodeLabel AttachedTo="37" Bounds="71 295 44 14" Id="40" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>List Box</p.Text>
-				</NodeLabel>
-				<DataAccessor Bounds="245 125 40 15" DataItem="30" Id="31" Label="34" xmlns="http://www.ni.com/MocCommon">
+				<DataAccessor Bounds="245 315 40 15" DataItem="30" Id="31" Label="34" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
-				<NodeLabel AttachedTo="31" Bounds="290 125 69 14" Id="34" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="31" Bounds="290 315 69 14" Id="34" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Blade Speed</p.Text>
 				</NodeLabel>
-				<Divide Bounds="190 115 30 30" Id="122" />
-				<Wire Id="124" Joints="N(116:Out)|(155,55) h(20) v(80) N(122:y)|(190,135)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="125" Joints="N(122:x/y)|(220,130) N(31:Value)|(248,130)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Divide Bounds="230 45 30 30" Id="131" />
-				<Literal Bounds="185 85 40 16" DataType="Double" Facade="Numeric" Id="132" xmlns="http://www.ni.com/MocCommon">
+				<Divide Bounds="180 305 30 30" Id="122" />
+				<Wire Id="124" Joints="N(116:Out)|(145,335) h(15) v(-10) N(122:y)|(180,325)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="125" Joints="N(122:x/y)|(210,320) N(31:Value)|(248,320)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Divide Bounds="180 270 30 30" Id="131" />
+				<Literal Bounds="105 275 40 16" DataType="Double" Facade="Numeric" Id="132" xmlns="http://www.ni.com/MocCommon">
 					<p.Data>0x4010000000000000</p.Data>
 					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 				</Literal>
-				<Wire Id="133" Joints="N(132:Out)|(225,90) h(5) v(-10) h(-5) v(-15) N(131:y)|(230,65)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="134" Joints="N(69:o)|(150,85) h(10) v(-35) N(131:x)|(230,50)" xmlns="http://www.ni.com/PlatformFramework" />
-				<DataAccessor Bounds="285 50 40 15" DataItem="126" Id="127" Label="130" xmlns="http://www.ni.com/MocCommon">
+				<Wire Id="133" Joints="N(132:Out)|(145,280) h(10) v(10) N(131:y)|(180,290)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="134" Joints="N(69:o)|(140,310) h(15) B(1) h(5) B(2) N(122:x)|(180,310) B(2) v(-35) N(131:x)|(180,275) B(1) v(35) N(16:Value)|(173,345)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="245 260 40 15" DataItem="126" Id="127" Label="130" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
-				<NodeLabel AttachedTo="127" Bounds="330 50 66 14" Id="130" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="127" Bounds="290 260 66 14" Id="130" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Wind Speed</p.Text>
 				</NodeLabel>
-				<Wire Id="135" Joints="N(131:x/y)|(260,60) h(15) B(1) h(5) v(-5) N(127:Value)|(288,55) B(1) v(35) N(142:Value)|(298,95)" xmlns="http://www.ni.com/PlatformFramework" />
-				<DataAccessor Bounds="295 90 40 15" DataItem="141" Id="142" Label="145" xmlns="http://www.ni.com/MocCommon">
+				<Wire Id="135" Joints="N(131:x/y)|(210,285) h(25) B(1) N(142:Value)|(248,285) B(1) v(-20) N(127:Value)|(248,265)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="245 280 40 15" DataItem="141" Id="142" Label="145" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
-				<NodeLabel AttachedTo="142" Bounds="340 90 46 14" Id="145" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="142" Bounds="290 280 46 14" Id="145" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Numeric</p.Text>
 				</NodeLabel>
-				<DataAccessor Bounds="245 390 40 15" DataItem="152" Id="153" Label="158" xmlns="http://www.ni.com/MocCommon">
+				<DataAccessor Bounds="245 50 40 15" DataItem="152" Id="153" Label="158" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="@8c57d4b17b94458cbca8b9dc88788919" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
-				<NodeLabel AttachedTo="153" Bounds="290 390 53 14" Id="158" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="153" Bounds="290 50 53 14" Id="158" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Data Grid</p.Text>
 				</NodeLabel>
-				<ArrayLiteral Bounds="94 390 157 216" DataType="@8c57d4b17b94458cbca8b9dc88788919" Facade="Array" Id="185" xmlns="http://www.ni.com/MocCommon">
+				<ArrayLiteral Bounds="70 50 157 216" DataType="@8c57d4b17b94458cbca8b9dc88788919" Facade="Array" Id="185" xmlns="http://www.ni.com/MocCommon">
 					<p.Data>
 						<Array Lengths="8" IsBinary="True" Compression="GZip">
-							<BinaryElements>H4sIAAAAAAAEAM1UW08aQRTeFRh2RaR4v9Vueksf6AaoVH3wQaCtRmtNoPaBGDssx2bSYYfM7LbBpH+gf7qdsy6IRRsfTFoSPjiXOd+55RimYRi/9Ad/8TM1oaF1RAMmfMr3fRXIsAt+oNyakFBwTkAqbdrZcDfdolssOLWQB6GEHR/CQFJecI7DNmfeAfSb4iv4O2WgtELPi1uvNqBcLnVSyFS5iaBOA3pCeQiai4cqAPmWAe/UBOfgoXtSvyTnqFMpn3ZBTUZCs98DlfMun9Roj3os6CdIwvhpNvpa13WvQij3HfggmeceMhV8LrVaN7jso63gdJUnJGft0aKLdyu6vblJK17ldWlbV13c2j49/XH3VLCee2a3cKp2AgGbaKc04BySqPqf2oT5kDOmqVTqTLELsM6+XUbVlpXbkmidWpZN9NPJ+JtPxn9IWkO6Gco284FYWshUOe2A0+gBdIitFalj8R0kQW9bEzi7nMouyWCAT8zvxJ5TaK4zeclLshj2zcumCCgn0yh86Dl7IpQkpwXrUHjRgpMHWpp4X01iw//tCvy1s9kR3qiZ+ZFmprGz0bpgNYml26Zgz2CPZhHmEOYRFhAWEZYQlhFWEFY1ZEk6fy12ZiQPew3dHg5h/bp4BWsDa5bkZ+Jo5DFOtlrfdUq52YEuPnFGbm5MMx9rTCO3MGZcHNMsjWmW/9TkVwaaJwhlPbRyKbc65Eli2o/iej/6+mQ19CZQzi6izdkTvAMSh5bEu2hHHtiWqV2loNvm/SN9AU3DtMhT42qAjUAy/0t0KJ9pOLjHFTKx2Zg0eT5CWBf6FURHBQnN9YHTCw3TsVNVCA7UH3plfgPTZIyddwYAAA==</BinaryElements>
-							<BinaryElements>H4sIAAAAAAAEAM1UW08aQRTeFRh2RaR4v9Vueksf6Aa3UvXBB4G2Gq01gdoHYuywHJtJhx0ys9sGk/6B/ul2zrooFm18MGlJ+OBc5nznlmOYhmH80h/8xc/EmIbWIQ2ZCCjfC1Qooy4EoXJrQkLJOQaptGl73d1wy2655NQiHkYStgOIQkl5yTmK2pz5+9Bviq8QbHtAaYWelTdfrYPnrXUyyFS5iaBOQ3pMeQSai0cqBPmWAe/UBOfgo3tavyRnqFOZgHZBjcdCs98DVfAvntRoj/os7KdIyvhpNvpa13WvQij3HQQgme8eMBV+Xmu1bnDZQ1vJ6SpfSM7aw0WX71Z0e2ODVvzK67UtXXV5c+vk5MfdU8F67pndwqnaKQRsop3RgHNIo+p/ahPmQ06ZplKZU8XOwTr9dhFVW5ZuS6J1Ylk20U/Hk28xnfwhWQ3ZZiTbLABiaSFX5bQDTqMH0CG2VmSOxHeQBL1tTeDscCq7JIcBPrGgk3hOoLnO5AUvyWPYNy+bIqScTKLwoefsikiSghasA+HHC04eaGnsfTWNDf+3K/DXzuaHeONmFoeamcXOxuuC1aQWbpuCPYU9mkaYQZhFmEOYR1hAWERYQljWkCfZ4rXYuaE87BV0e3gJq9fFK1gZWPOkOJVEI49xstX6juMVpge65MQZhZkRzWyiMY3C3IhxfkSzMKJZ/FNTXBponiB4emieV1i+5Elj2o+Sej8G+mQ19CZQzs7jzdkVvAMSh5bGu2jHHtiWiR2loNvm/UN9AU3DtMhT42qAjVCy4Et8KJ9p2L/HFTKx2Zg0eT5EWBf6FcRHBQnN1YHTCw2TiVNVCA40uPTK/Qa1LzPEdwYAAA==</BinaryElements>
-							<BinaryElements>H4sIAAAAAAAEAM1UW08aQRTeFRh2RaR4v9Vueksf6AZRqj74INBW46UmUPtAjB2WYzPpsENmdttg0j/QP93OWRfEoo0PJi0JH5zLnO/ccgzTMIxf+oO/+JkY09A8pgETPuX7vgpk2AE/UG5VSCg4pyCVNu1suJtu0S0WnGrIg1DCjg9hICkvOCdhizPvAHoN8RX8nRJQWqYXxa31DSiV1topZCrfRlCjAT2lPATNxUMVgHzHgLergnPw0D2pX5IL1KmUTzugxiOh0euCynlXT6q0Sz0W9BIkYfw06z2t67jXIZT7HnyQzHMPmQo+rzWbt7jso63gdJQnJGet4aKL9yu6tblJy175zdq2rrq4tX129uP+qWA9D8xu4VTtBAI20U5pwDkkUfU/tQnzIedMU6nUuWKXYJ1/u4qqLUt3JdE8syyb6Kfj8TefjP+QtIZ0I5Qt5gOxtJCpcNoGp94FaBNbK1In4jtIgt62JnB2OZUdksEAn5jfjj0n0Fxj8oqXZDHs29cNEVBOJlH40HX2RChJTgvWofCiBSePtDR2VEliw//tCvy1s9kh3qiZ+aFmprGz0bpgNYmFu6ZgT2GPphFmEGYR5hDmERYQFhGWEJY1ZEk6fyN2ZigPewXdHg9g9aZ4DSt9a5bkp+Jo5ClOtlLbddZz031dfOKM3MyIZjbWmEZubsQ4P6JZGNEs/qnJL/U1zxBKemil9dzygCeJaT+J6/3o65NV15tAObuMNmdP8DZIHFoS76IdeWBbJnaVgk6L9471BTQN0yLPjesB1gPJ/C/RoXyh4eABV8jEZmPS5OUQYU3oVxAdFSQ0V/tOrzRMxk4VIThQf+CV+Q2oFIlFdwYAAA==</BinaryElements>
-							<BinaryElements>H4sIAAAAAAAEAM1UW08aQRTeFRh2RaR4v9Vueksf6AYpVH3wQaCtRmtNoPaBGDssx2bSYYfM7LbBpH+gf7qdsy6IRRsfTFoSPjiXOd+55RimYRi/9Ad/8TM1oaF1RAMmfMr3fRXIsAt+oNyakFBwTkAqbdopu5tu0S0WnFrIg1DCjg9hICkvOMdhmzPvAPpN8RX8nRJQWqHnxa1XZSiVNjopZKrcRFCnAT2hPATNxUMVgHzLgHdqgnPw0D2pX5Jz1KmUT7ugJiOh2e+BynmXT2q0Rz0W9BMkYfw0G32t67pXIZT7DnyQzHMPmQo+b7RaN7jso63gdJUnJGft0aKLdyu6vblJK17l9ca2rrq4tX16+uPuqWA998xu4VTtBAI20U5pwDkkUfU/tQnzIWdMU6nUmWIXYJ19u4yqLSu3JdE6tSyb6KeT8TefjP+QtIZ0M5Rt5gOxtJCpctoBp9ED6BBbK1LH4jtIgt62JnB2OZVdksEAn5jfiT2n0Fxn8pKXZDHsm5dNEVBOplH40HP2RChJTgvWofCiBScPtDTxvprEhv/bFfhrZ7MjvFEz8yPNTGNno3XBahJLt03BnsEezSLMIcwjLCAsIiwhLCOsIKxqyJJ0/lrszEge9hq6PRzC+nXxCtYG1izJz8TRyGOcbLW+65RzswNdfOKM3NyYZj7WmEZuYcy4OKZZGtMs/6nJrww0TxBKemilcm51yJPEtB/F9X709clq6E2gnF1Em7MneAckDi2Jd9GOPLAtU7tKQbfN+0f6ApqGaZGnxtUAG4Fk/pfoUD7TcHCPK2RiszFp8nyEsC70K4iOChKa6wOnFxqmY6eqEByoP/TK/AZ5uU13dwYAAA==</BinaryElements>
-							<BinaryElements>H4sIAAAAAAAEAM1UW08aQRTeFRh2RaR4v9Vueksf6AaoVH3wQaCtRmtNoPaBGDssx2bSYYfM7LbBpH+gf7qdsy6IRRsfTFoSPjiXOd+55RimYRi/9Ad/8TM1oaF1RAMmfMr3fRXIsAt+oNyakFBwTkAqbdrZcDfdolssOLWQB6GEHR/CQFJecI7DNmfeAfSb4iv4O2WgtELPi1uvNqBcLnVSyFS5iaBOA3pCeQiai4cqAPmWAe/UBOfgoXtSvyTnqFMpn3ZBTUZCs98DlfMun9Roj3os6CdIwvhpNvpa13WvQij3HfggmeceMhV8LrVaN7jso63gdJUnJGft0aKLdyu6vblJK17ldWlbV13c2j49/XH3VLCee2a3cKp2AgGbaKc04BySqPqf2oT5kDOmqVTqTLELsM6+XUbVlpXbkmidWpZN9NPJ+JtPxn9IWkO6Gco284FYWshUOe2A0+gBdIitFalj8R0kQW9bEzi7nMouyWCAT8zvxJ5TaK4zeclLshj2zcumCCgn0yh86Dl7IpQkpwXrUHjRgpMHWpp4X01iw//tCvy1s9kR3qiZ+ZFmprGz0bpgNYml26Zgz2CPZhHmEOYRFhAWEZYQlhFWEFY1ZEk6fy12ZiQPew3dHg5h/bp4BWsDa5bkZ+Jo5DFOtlrfdSq52YEuPnFGbm5MMx9rTCO3MGZcHNMsjWmW/9TkVwaaJwjlUsEpl3KrQ54kpv0orvejr09WQ28C5ewi2pw9wTsgcWhJvIt25IFtmdpVCrpt3j/SF9A0TIs8Na4G2Agk879Eh/KZhoN7XCETm41Jk+cjhHWhX0F0VJDQXB84vdAwHTtVheBA/aFX5jctaS1ydwYAAA==</BinaryElements>
-							<BinaryElements>H4sIAAAAAAAEAM1UW08aQRTeFRh2RaR4v9Vueksf6AaoeHnwQaCtxktNoPaBGDssx2bSYYfM7LbBpH+gf7qdsy6KRRsfTFoSPjiXOd+55RimYRi/9Ad/8TMxpqF1RAMmfMr3fBXIsAt+oNyakFBwTkAqbdpeczfcolssOLWQB6GEbR/CQFJecI7DNmfePvSb4iv422WgtELPi5tv1qBcLnVSyFS5jaBOA3pCeQiai4cqAPmOAe/UBOfgoXtSvyTnqFMpn3ZBjUdCs98DlfMun9Roj3os6CdIwvhpNvpa13WvQyj3PfggmeceMBV8LrVat7jsoa3gdJUnJGft4aKL9yu6vbFBK15lvbSlqy5ubp2e/rh/KljPA7NbOFU7gYBNtFMacA5JVP1PbcJ8yBnTVCp1ptgFWGffLqNqy9JdSbROLcsm+ul4/M0n4z8krSHdDGWb+UAsLWSqnHbAafQAOsTWitSx+A6SoLetCZwdTmWXZDDAJ+Z3Ys8JNNeZvOQlWQz79nVTBJSTSRQ+9JxdEUqS04J1ILxowckjLY0dVpPY8H+7An/tbHaIN2pmfqiZaexstC5YTWLhrinYU9ijaYQZhFmEOYR5hAWERYQlhGUNWZLO34idGcrDXkG3x1ewelO8hpWBNUvyU3E08hQnW63vOOu56YEuPnFGbmZEMxtrTCM3N2KcH9EsjGgW/9TklwaaZwjlUsEpl3PLVzxJTPtJXO9HX5+sht4EytlFtDm7gndA4tCSeBftyAPbMrGjFHTbvH+kL6BpmBZ5blwPsBFI5n+JDuULDfsPuEImNhuTJi+HCOtCv4LoqCChuTpweqVhMnaqCsGB+ldemd9LIpIrdwYAAA==</BinaryElements>
-							<BinaryElements>H4sIAAAAAAAEAM1UW08aQRTeFRh2RaR4v9Vueksf6AZUqj74oFCr8VJTqH0gxA7LsZl02CEzu20w6R/on27nrIti0cYHk5aED85lznduOYZpGMYv/cFf/IyNaGgc04AJn/J9XwUy7IAfKLciJBScU5BKm7bW3HW36BYLTiXkQShhy4cwkJQXnJOwxZl3AL26+Ar+1gpQWqbnxY3VNVhZKbVTyFS+jaBKA3pKeQiai4cqALnLgLcrgnPw0D2pX5Jz1KmUTzugRiOh3uuCynmXTyq0Sz0W9BIkYfw0az2t67jXIZT7DnyQzHMPmQo+lxqNW1z20VZwOsoTkrPWYNHF+xXdWl+nZa/8prSpqy5ubDabP+6fCtbzwOwWTtVOIGAT7ZQGnEMSVf9TmzAfcsY0lUqdKXYB1tm3y6jasnBXEo2mZdlEPx2Nv/lk/IekNaTroWwxH4ilhcwOp21wal2ANrG1InUivoMk6G1rAmebU9khGQzwifnt2HMMzVUmL3lJFsO+fV0XAeVkHIX3XWdPhJLktGAdCi9acPJISyNHO0ls+L9dgb92NjvAGzUzP9DMNHY2WhesJjF31xTsCezRJMIUwjTCDMIswhzCPMICwqKGLEnnb8TODORhL6Hb4ytYvilew1LfmiX5iTgaeYqT3f1QdUq5yb4uPnFGbmpIMx1rTCM3M2ScHdLMDWnm/9TkF/qaZwiremira7nFK54kpv0krvejr09WTW8C5ewi2pw9wdsgcWhJvIt25IFtGdtWCjot3jvWF9A0TIs8N64HWAsk879Eh/KFhoMHXCETm41Jk5cDhFWhX0F0VJDQXO47vdIwHjvtCMGB+ldemd+dpSW7dwYAAA==</BinaryElements>
-							<BinaryElements>H4sIAAAAAAAEAM1UW08aQRTeFRh2RaR4v9Vueksf6AZRqj74oFCr8VJTqH0gxA7LsZl02CEzu20w6R/on27nrIti0cYHk5aED85lznduOYZpGMYv/cFf/IyNaGgc04AJn/J9XwUy7IAfKLciJBScU5BKm7bW3HW36BYLTiXkQShhy4cwkJQXnJOwxZl3AL26+Ar+VgkoLdPz4sbqGpRKK+0UMpVvI6jSgJ5SHoLm4qEKQO4y4O2K4Bw8dE/ql+QcdSrl0w6o0Uio97qgct7lkwrtUo8FvQRJGD/NWk/rOu51COW+Ax8k89xDpoLPK43GLS77aCs4HeUJyVlrsOji/Ypura/Tsld+s7Kpqy5ubDabP+6fCtbzwOwWTtVOIGAT7ZQGnEMSVf9TmzAfcsY0lUqdKXYB1tm3y6jasnBXEo2mZdlEPx2Nv/lk/IekNaTroWwxH4ilhcwOp21wal2ANrG1InUivoMk6G1rAmebU9khGQzwifnt2HMMzVUmL3lJFsO+fV0XAeVkHIX3XWdPhJLktGAdCi9acPJISyNHO0ls+L9dgb92NjvAGzUzP9DMNHY2WhesJjF31xTsCezRJMIUwjTCDMIswhzCPMICwqKGLEnnb8TODORhL6Hb4ytYvilew1LfmiX5iTgaeYqT3f1QdUq5yb4uPnFGbmpIMx1rTCM3M2ScHdLMDWnm/9TkF/qaZwiremir5dziFU8S034S1/vR1yerpjeBcnYRbc6e4G2QOLQk3kU78sC2jG0rBZ0W7x3rC2gapkWeG9cDrAWS+V+iQ/lCw8EDrpCJzcakycsBwqrQryA6KkhoLvedXmkYj512hOBA/SuvzG+acejpdwYAAA==</BinaryElements>
+							<BinaryElements>H4sIAAAAAAAEAM1VbU8TQRC+s+1yR1uO4huiyCW+EJN6aQsV+IA52qoQEElaUdMQ3F4Xs3F71+zeaUpi9LO/yv/kD9CZawttAoYPJLjJPc3MzswzMzvd1XRN0/7Awl9cmWsAzV0a8sCnYstXoYw6zA+VUw0ky9v7TCrYWl92VpyCU8jb1UiEkWTrPotCSUXe3otagnvbrNcIPjN/vcQoLdOjwurSMiuViu0UMpXPIqjRkO5TETHgEpEKmXzJmWhXAyGYh+ZJ8CRHqFMpn3aYmoyFRq/LlOX1Xaq0Sz0e9hKJhPZTr/dA13FOQyjnFfOZ5J6zw1X4sdhsnmGyhXt5u6O8QAreGi26cLGiWysrtOyVnxXXoOrC6trBwfeLp1IPJfc/XTL/t4vzYz8vmd3AqTITCHiIZgoA5yCJqv/pmDAfcsiBSqUOFT9mxuGXflTYmTsvieaBYZgEXCcHXxKrvOojP78WSBUSnhgkiyuJJ3K1M/LP1mdHeONuGyPdnsDWx/M0DV9i9rxjMk2cPfQw0wgZhCzCFIKFgBHMHMIMQJbkhl0i15GpEckW9xm5AUK6Imib2fUuY21yExSpveArk+QWekMO9oagskNuY4B33G8PLGdxu8ZlPzVyB8O+eNoIQirIHApvuvZmEElyFwRjJ/Diq5LcA+na68qEMVZreqQv5jxGvn8CC+PiKcwPd6E8cxCNPMACKrUNu2hNDnX92XjuWukxjfvBtTIDja5Z2XHzJdeaGjd/71rWqObH4m/Xmh6z+bXn5nJDzUOEEgxRqWjNnPAkMe2FQb1vfbjj6zCZVPDjuEGbgWgziUOUxIfEjC2wLZkNpVinJXq78GTomm6QR9rpQPX/efHL8hhg+xJHWsdmY9JkcYSwFoAXi29BJNQXhkZPAKYGRpUgEIz6J1bpv96JQIKoBwAA</BinaryElements>
+							<BinaryElements>H4sIAAAAAAAEAM1VX08TQRC/o+32jrYcxX+IIpf4Lya1KScVeMCUtioERJJWNDYEt9fFbNzeNbt3mpIY333xC/lhfPJr6Mz1Cm0ChgcS3OR+zczOzG9mdrqr6Zqm/YGFv7iyEwCtHRpw36Ni01OBDLvMC1Sx5ktWsPeYVLC1tlRcLpaKpYJdC0UQSrbmsTCQVBTs3bAtuLvF+k3/E/PWHEZpmR6WVp4sMcdZ7KSQqXwaQZ0GdI+KkAGXCFXA5AvORKfmC8FcNE+CJzlEnUp5tMvUZCQ0+z2mLHfgUqM96vKgn0gktO96ow+6bvEkhCq+ZB6T3C1ucxV8WGy1TjHZxL2C3VWuLwVvjxZdOl/R7eVlWnbLTxdXoerSyur+/rfzp9IIJPc+XjD/1/PzYz8vmN3AqTITCHiIZgoA5yCJqv/pmDAfcsCBSqUOFD9ixsHnQVTYmTsrida+YZgEXCfjL4lVXvaRn10LpAoJp+NkcSXxRC53Rv7Z+twIb9RtY6TbaWx9NE/T8CVmzzom08TZQw8zg5BFyCFMIVgIGMHMI8wA5Eh+2CVyBZmaoWxzj5GrIGSqgnaY3egx1iHXQJHa9b8wSa6jN+Rgrwsqu+QGBnjLvU5sOYvbdS4HqZGbGPb546YfUEHmUHjdszf8UJJbIBjbvhtdleQ2SBOvqmljrNbMSF/MeYx85xgWxsUTmB/uQnlmHI3cxQKq9XXbsSaHusFsPKtYmXHN+4qVjTW6ZuXGN8sVa2pc865iWaOaXz9/V6zpMZuNH5V8fqi5h+DAEDmONXPMk8S0F+J633hwxzdgMqngR1GDNnzRYRKHKIkPiRlZYFuy60qxblv0d+DJ0DXdIPe1k4Ea/POil+UBwNYFjrSOzcakycMRwroPXiy6BZFQXxgaPQKYio2qvi8Y9Y6tMn8BGxRFGqgHAAA=</BinaryElements>
+							<BinaryElements>H4sIAAAAAAAEAM1VbU8TQRC+o+32jrYcxTdEkUt8i0m9lEIFPpCUtioERJJW1DQEt9fFbNzeNbt3mpIY/ezf8Q/4f/wROnO9QpuA4QMJbnJPM7Mz88zMTnc1XdO0P7DwF1d2AqC1SwPue1RseSqQYZd5gXJqvmQFe59JBVvry86KU3SKBbsWiiCUbN1jYSCpKNh7YVtwd5v1m/4n5q2XGKVlelRcXVpmpdJiJ4VM5bMI6jSg+1SEDLhEqAImX3AmOjVfCOaieRI8yRHqVMqjXaYmI6HZ7zFluQOXGu1Rlwf9RCKh/dAbfdB1ndMQynnJPCa56+xwFXxYbLXOMNnCvYLdVa4vBW+PFl28WNHtlRVadsvPFteg6uLq2sHBt4un0ggk9z5eMv/Xi/NjPy+Z3cCpMhMIeIhmCgDnIImq/+mYMB9yyIFKpQ4VP2bG4edBVNiZOy+J1oFhmARcJ+MviVVe9ZGfXwukCgmn42RxJfFErnZG/tn63Ahv1G1jpNtpbH00T9PwJWbPOybTxNlDDzODkEXIIUwhWAgYwcwjzADkSH7YJXINmZqhbHOPkesgZKqCdpjd6DHWITdAkdrzvzBJbqI35GBvCCq75BYGeMu9Tmw5i9t1LgepkdsY9vnTph9QQeZQeN2zN/1QkjsgGDu+G12V5C5IE6+qaWOs1sxIX8x5jHzvBBbGxVOYH+5CeWYcjdzHAqr1DXvJmhzqBrNRrViZMc2v9xUrG2t0zcqNm5cr1tSYpvKuYlmjGvvn74o1PWbzvVHJ54eaBwglGKLSkjVzwpPEtBfiet94cMc3YDKp4MdRgzZ90WEShyiJD4kZWWBbshtKsW5b9HfhydA13SAPtdOBGvzzopflEcD2JY60js3GpMnjEcK6D14sugWRUF8YGj0BmIqNqr4vGPVOrDJ/AZjdwd6oBwAA</BinaryElements>
+							<BinaryElements>H4sIAAAAAAAEAM1VbU8TQRC+o+32jrYcxTdEkUt8i0ltSm0FPpD0TYWASNKKmobA9rqYjdu7ZvdOUxKjn/3iz/Ef+Td05nqFNgHDBxLc5J5mZmfmmZmd7mq6pml/YOEvrvQUQHuH+txzqdh0lS+DHnN9la97kuXsPSYVbK2X8iv5Qr6Qs+uB8APJ1l0W+JKKnL0bdAR3ttig5X1i7nqRUVqmR4XVZyVWLC53E8hUPougQX26R0XAgEsEymfyJWeiW/eEYA6ax8GTHKFOJVzaY2o6FFqDPlOWM3Sp0z51uD+IxWLaD705AF0vfxpC5V8xl0nu5Le58g+X2+0zTDZxL2f3lONJwTvjRRcuVnRnZYWWnfLz5TWourC6tr//7eKpNH3J3Y+XzP/14vzYz0tmN3CqzBgCHqKZAMA5iKPqfzomzIcccKBSiQPFj5lx8HkYFXYWzkuivW8YJgHX6eiLY5VXfeTn1wKpQsLJKFlccTyRq52Rf7Y+M8YbdtsY63YSWx/O0yx8sfnzjsk0cfbQw0whpBEyCDMIFgJGMLMIcwAZkh11iVxDplYgO9xl5DoIqZqgXWY3+4x1yQ1QJHa9L0ySm+gNOdhVQWWP3MIA77jbjSzncbvB5TA1chvDvnja8nwqyAIKb/r2hhdIcgcEY9tzwquS3AVp6nUtaUzUmhrri7mIke+dwNKkeAqLo10oz4yikftYQK1RtUvW9EgXjsb3asVKTWi0DxUrHWl0zcpMbpYr1syk5n3FssY1h79+V6zZCZvCz0o2O9I8QCjCEBVL1twJTxzTXorqfevCHd+EyaSCH4cN2vBEl0kcojg+JGZogW1JV5VivY4Y7MCToWu6QR5qpwM1/OeFL8sjgK1LHGkdm41Jk8djhA0PvFh4CyKhvjQyegIwExnVPE8w6p5Ypf4Cy8zkH6gHAAA=</BinaryElements>
+							<BinaryElements>H4sIAAAAAAAEAM1VbU8TQRC+o+32jrYcxTdEkUt8i0m9tJUKfCDpmwIBkaQVNQ3B7XUwG7d3ze6dpiRGP/vZn+A/9AfozrWFNgHDBxLc5J5mZmfmmZmd7mq6pml/1MJfXOkpBa1dGjDfo3zLk4EIu+AF0qn5AnL2PgipttaXnRUn7+Rzdi3kQShg3YMwEJTn7L2wzZm7Df2m/wm89SJQWqJH+dVny1AsFjoJZCqdRVCnAd2nPATFxUMZgHjJgHdqPufgonlceZIj1MmER7sgpyOh2e+BtNyBS432qMuCfiwW037ojb7SdZ3TENLZAA8Ec50dJoMPhVbrDJMt3MvZXen6grP2eNH5ixXdXlmhJbf0vLCmqs6vrh0cfLt4Ko1AMO/jJfN/vTg/9vOS2Q2cKjOGgIdoJhTgHMRR9T8dE+ZDDpmikolDyY7BOPw8iKp2Fs5LonVgGCZRrtPDL45VXvWRn1+LSlUlnBwmiyuOJ3K1M/LP1mfGeKNuG2PdTmLro3maVV9s/rxjMk2cPfQwUwhphAzCDIKFgBHMLMKcggzJjrpEriFTMxRt5gG5roRUldMO2I0eQIfcUIrEnv8FBLmJ3ioHu8Kp6JJbGOAt8zpDy3ncrjMxSI3cxrAvnjb9gHKygMLrnr3ph4LcUYKx47vRVUnuKmnqVTVpTNSaGuuLuYiR753A0qR4CoujXVWeOYxG7mMB1XrFLlnTI100Gt8rZSs1odHel630UKNrVmZys1i2ZiYDvCtb1rhmb+N32ZqdsPn1s5zNjjQPEIqFnF0sWHMnPHFMe2lY7xtP3fENNZmUs+OoQZs+74DAIYrjQ2JGFtiWdEVK6LZ5f1c9GbqmG+ShdjpQg39e9LI8UrB9iSOtY7MxafJ4jLDuKy+IbkEk1JdGRk8UzAyNqr7PgXonVqm/WIqeWqgHAAA=</BinaryElements>
+							<BinaryElements>H4sIAAAAAAAEAM1VbU8TQRC+o+1yR1uO4huiyCW+xaRe2kJ5+UDSNxQCIkkrmjQEt9fFbNzeNbt3mpIY/ewX/5I/xS/+Dp25ttAmYPhAgpvc08zszDwzs9NdTdc07Q8s/MWVmgBo7tGA+x4V254KZNhhXqCcqi9Z1j5gUsHWxrKz6uScXNauhiIIJdvwWBhIKrL2ftgS3N1hvYb/kXkbBUZpkR7n1paWWaGQbyeQqXgeQY0G9ICKkAGXCFXA5AvORLvqC8FcNI+DJzlGnUp4tMPUVCQ0el2mLLfvUqVd6vKgF4vFtO96vQe6jnMWQjkvmcckd51droL3+WbzHJNt3MvaHeX6UvDWaNG5yxXdWl2lRbe4kl+HqnNr64eHXy+fSj2Q3PtwxfxfLs+P/bxidgOnyowh4CGaCQCcgziq/qdjwnzIEQcqlThS/IQZR5/6UWFn/qIkmoeGYRJwnRp8cazyuo/84logVUh4cpAsrjieyPXOyD9bnx7hjbptjHR7ElsfzdMMfLG5i47JNHH20MNMIqQQ0gjTCBYCRjAzCLMAaZIZdoncQKZGKFvcY+QmCMmKoG1m17uMtcktUCT2/c9MktvoDTnYZUFlh9zBAG+51x5YzuF2jct+auQuht183vADKsg8Cq+79pYfSnIPBGPXd6OrktwHaeJVZdIYqzU50hdzASM/OIXFcfEMFoa7UJ45iEYeYgGVWtlesaaGumg0vpVKVnJM8/NdyUoNNLpmpcc2taWSNT2uAXNrVPNr83fJmhmzmftRymSGmkcIhXzWLhSs2VOeOKa9OKj3jQd3fB0mkwp+EjVoyxdtJnGI4viQmJEFtiVVVop1WqK3B0+GrukGeaydDVT/nxe9LE8Adq5wpHVsNiZNno4Q1nzwYtEtiIT64tDoGcD0wKji+4JR79Qq+RdSCYTnqAcAAA==</BinaryElements>
+							<BinaryElements>H4sIAAAAAAAEAM1VbU8TQRC+o+1yR1uO4huiyCW+xaRe2kIFPmAOWhECIrEVTBoC2+tiLm7vmt07TUmM8at/SD/6U/wnOnO9QpuA4QMJbHJPM7Mz88zMTncVVVGUv7DwF1dmBKCxTQPX9yjf8GQgwjbzAmlVfMHy5i4TEraW560Fq2AV8mYl5EEo2LLHwkBQnjd3wiZ3nU3WrfufmLdcYpSW6VFhcW6elUrFVgqZymcRVGlAdykPGXDxUAZMrLmMtyo+58xB8yR4kiPUyZRH20yORUK922HScHouFdqhjht0E4mE8kOtdUHXtk5DSOs185hwHWvLlcFhsdE4w2QD9/JmWzq+4G5zsOjCxYpuLizQslN+UVyCqguLS/v73y6eSi0Qrvfxkvm/Xpwf+3nJ7BpOlZ5AwEPUUwA4B0lUXadjwnzIgQtUMnUg3WOmHXzuRYWd6fOSaOxrmk7AdSz+kljlVR/5+bVAqpDwaJwsriSeyNXOyH9bnx3gjbqtDXR7FFsfzdMEfImp845J13H20ENPI2QQsgjjCAYCRtBzCJMAWZLrd4ncQKZ6KJqux8hNENKrnLaYWesw1iK3QJHa8b8wQW6jN+RgrnAq2uQOBthzvVZsOYXbVVf0UiN3Meyr53U/oJxMo/C2Y677oSD3QNC2fCe6Ksl9kEberI5qQ7WmB/qiz2DkBycwOyyewkx/F8rT42jkIRaw9q5qFo2xvq43Gy9tIz2ksT/YRibWqIqRHTYv2cb4kOb3nm0Yg5rDn39sY2LI5td3O5frax4hzMEQzc0bkyc8SUx7Nq73vQd3fA0mk3L3OGrQus9bTOAQJfEh0SMLbEtmRUrWbvLuNjwZqqJq5LFyOlC9f170sjwB2LzEkVax2Zg0eTpAWPXBi0W3IBKqs32jZwDjsdGq73NGvROr9D+h2DG2qAcAAA==</BinaryElements>
+							<BinaryElements>H4sIAAAAAAAEAM1VX08TQRC/o+1yR1uO4j9EkUtUjEm9lEIFHkgOWhECIrEVNQ2B7XUxG7d3ze6dpiTGdx/8bH4Wv4DOXFtoEzA8kMAm92tmdmZ+M7PTXU3XNO0vLPzFlRkBqO/SkAc+FVu+CmXUYn6onHIgWd7eZ1LB1uqis+QUnELeLkcijCRb9VkUSiry9l7UENzbZp1a8IX5q0VGaYkeF5YXFlmxON9MIVPpPIIKDek+FREDLhGpkMkNzkSzHAjBPDRPgic5Rp1K+bTF1Fgs1Dptpiyv61KmberxsJNIJLSferUDupZzFkI5r5nPJPecHa7Co/l6/RyTLdzL2y3lBVLwxmDRhcsV3VhaoiWv9HJ+BaouLK8cHPy4fCrVUHL/8xXzf788P/bzitkNnCozgYCHaKYAcA6SqLpJx4T5kEMOVCp1qPgJMw6/dqPCzvRFSdQPDMMk4DrW+5JY5XUf+cW1QKqQ8GgvWVxJPJHrnZH/tj47wBt32xjo9ii2Pp6nCfgSUxcdk2ni7KGHmUbIIGQRxhEsBIxg5hAmAbIk1+8SuYVMtUg2uM/IbRDS64I2mV1tM9Ykd0CR2gu+MUnuojfkYK8JKlvkHgb4wP1mz3IKtytcdlMj9zHsqxe1IKSCTKPwtm1vBpEkD0AwdgIvvirJQ5BG3qyPGkO1pgf6Ys5g5EenMDssnsFMfxfKM3vRyGMsYONdxS5aY31ddzZc10oPadxPrpXpaXTNyg6bl1xrfNj8o2tZg5qjuT+uNTFk8/uXm8v1NU8QFmCIFkrW5ClPEtOe7dX73oc7vgqTSQU/iRu0GYgmkzhESXxIzNgC25JZU4q1GqKzC0+GrukGeaqdDVT3nxe/LHMA21c40jo2G5MmzwYIKwF4sfgWREJ9tm/0HGC8Z7QeBIJR/9Qq/Q9KO0roqAcAAA==</BinaryElements>
 						</Array>
 					</p.Data>
 					<ArrayBehavior ElementType="@edb65463688e49a9aeeda7bfeb8b0a16" IndexEditorWidth="42">
@@ -178,35 +148,35 @@
 					<ClusterLiteral Bounds="47 5 96 206" DataType="@edb65463688e49a9aeeda7bfeb8b0a16" Facade="Cluster" Id="186">
 						<p.Data>
 							<Cluster>
-								<Field1>FRD 2</Field1>
-								<Field2>0x0</Field2>
-								<Field3>0x0</Field3>
+								<Field1>BDA 1</Field1>
+								<Field2>0x403E000000000000</Field2>
+								<Field3>0x4059400000000000</Field3>
 								<Field4>False</Field4>
-								<Field5>0x0</Field5>
-								<Field6>0x0</Field6>
-								<Field7>0x0</Field7>
-								<Field8>0x0</Field8>
-								<Field9>30, 35</Field9>
+								<Field5>0x4033000000000000</Field5>
+								<Field6>0x4058400000000000</Field6>
+								<Field7>0x40F3278000000000</Field7>
+								<Field8>0x4050C00000000000</Field8>
+								<Field9>20, 21</Field9>
 								<Field10>False</Field10>
 							</Cluster>
 						</p.Data>
 						<ClusterBehavior AutoArrange="ArrangeVertically" />
 						<Literal Bounds="2 2 75 15" DataType="String" Facade="String" Id="187" Label="188">
-							<p.Data>FRD 2</p.Data>
+							<p.Data>BDA 1</p.Data>
 							<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
 						</Literal>
 						<NodeLabel AttachedTo="187" Bounds="2 -16 45 15" Id="188" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>Turbine</p.Text>
 						</NodeLabel>
 						<Literal Bounds="2 21 40 16" DataType="Double" Facade="Numeric" Id="189" Label="190">
-							<p.Data>0x0</p.Data>
+							<p.Data>0x403E000000000000</p.Data>
 							<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 						</Literal>
 						<NodeLabel AttachedTo="189" Bounds="2 3 70 15" Id="190" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>Blade Speed</p.Text>
 						</NodeLabel>
 						<Literal Bounds="2 41 40 16" DataType="Double" Facade="Numeric" Id="191" Label="192">
-							<p.Data>0x0</p.Data>
+							<p.Data>0x4059400000000000</p.Data>
 							<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 						</Literal>
 						<NodeLabel AttachedTo="191" Bounds="2 23 35 15" Id="192" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
@@ -220,35 +190,35 @@
 							<p.Text>Sys Alarm</p.Text>
 						</NodeLabel>
 						<Literal Bounds="2 80 40 16" DataType="Double" Facade="Numeric" Id="195" Label="196">
-							<p.Data>0x0</p.Data>
+							<p.Data>0x4033000000000000</p.Data>
 							<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 						</Literal>
 						<NodeLabel AttachedTo="195" Bounds="2 62 70 15" Id="196" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>Wind Speed</p.Text>
 						</NodeLabel>
 						<Literal Bounds="2 100 40 16" DataType="Double" Facade="Numeric" Id="197" Label="198">
-							<p.Data>0x0</p.Data>
+							<p.Data>0x4058400000000000</p.Data>
 							<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 						</Literal>
 						<NodeLabel AttachedTo="197" Bounds="2 82 50 15" Id="198" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>Direction</p.Text>
 						</NodeLabel>
 						<Literal Bounds="2 120 40 16" DataType="Double" Facade="Numeric" Id="199" Label="200">
-							<p.Data>0x0</p.Data>
+							<p.Data>0x40F3278000000000</p.Data>
 							<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 						</Literal>
 						<NodeLabel AttachedTo="199" Bounds="2 102 40 15" Id="200" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>E-Total</p.Text>
 						</NodeLabel>
 						<Literal Bounds="2 140 40 16" DataType="Double" Facade="Numeric" Id="201" Label="202">
-							<p.Data>0x0</p.Data>
+							<p.Data>0x4050C00000000000</p.Data>
 							<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 						</Literal>
 						<NodeLabel AttachedTo="201" Bounds="2 122 50 15" Id="202" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>Op Hour</p.Text>
 						</NodeLabel>
 						<Literal Bounds="2 160 70 15" DataType="String" Facade="String" Id="203" Label="204">
-							<p.Data>30, 35</p.Data>
+							<p.Data>20, 21</p.Data>
 							<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
 						</Literal>
 						<NodeLabel AttachedTo="203" Bounds="2 142 50 15" Id="204" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
@@ -263,21 +233,19 @@
 						</NodeLabel>
 					</ClusterLiteral>
 				</ArrayLiteral>
-				<Wire Id="207" Joints="N(185:Out)|(251,395) N(153:Value)|(248,395)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="968" Joints="N(51:Out)|(85,285) h(10) v(15) N(69:c0t0v)|(110,300)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="970" Joints="N(185:Out)|(227,55) N(153:Value)|(248,55)" xmlns="http://www.ni.com/PlatformFramework" />
 			</WhileLoop>
 		</BlockDiagram>
-		<HtmlFrontPanel Height="[float]850" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]1024" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI">
-			<HtmlChart DataSource="{DataItemBinding Id=15}" DataSourceType="[Type]Double[]" Height="[float]280" Id="17" Label="[UIModel]26" Left="[float]4" TabIndex="[int]0" Top="[float]4" Width="[float]1000" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<HtmlAxis Adjuster="[RangeAdjuster]ContinuousChart" Id="18" Label="[string]Time" LabelVisibility="[SMVisibility]Collapsed" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 100, System.Double" ValueType="[Type]Double" />
+		<HtmlFrontPanel Height="[float]850" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" UpdatedRootPage="[string]&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&quot;en&quot;&gt;&#xA;  &lt;head&gt;&#xA;    &lt;style&gt;&#xA;      &lt;!---Read only section. Source panel edits to the content of this style tag will not be persisted--&gt;&#xA;      [data-ni-base-style] {&#xA;        position: absolute;&#xA;      }&#xA;      ni-chart[ni-control-id='17'] {&#xA;        left: 4px;&#xA;        top: 4px;&#xA;        width: 1000px;&#xA;        height: 280px;&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-cartesian-axis[ni-control-id='18'] {&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-cartesian-axis[ni-control-id='19'] {&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-cartesian-plot[ni-control-id='20'] {&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-cartesian-plot[ni-control-id='28'] {&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-cartesian-plot[ni-control-id='29'] {&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-cartesian-plot[ni-control-id='90'] {&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-cartesian-plot[ni-control-id='91'] {&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-cartesian-plot[ni-control-id='92'] {&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-plot-legend[ni-control-id='22'] {&#xA;        left: 1011px;&#xA;        top: 16px;&#xA;        width: 145px;&#xA;        height: 156px;&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-cursor-legend[ni-control-id='23'] {&#xA;        left: 9px;&#xA;        top: 313px;&#xA;        width: 270px;&#xA;        height: 202px;&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-scale-legend[ni-control-id='24'] {&#xA;        left: 1011px;&#xA;        top: 182px;&#xA;        width: 145px;&#xA;        height: 60px;&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-graph-tools[ni-control-id='25'] {&#xA;        left: 52px;&#xA;        top: 20px;&#xA;        width: 120px;&#xA;        height: 35px;&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-label[ni-control-id='26'] {&#xA;        left: 4px;&#xA;        top: -16px;&#xA;        width: 29px;&#xA;        height: 16px;&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;        color: #4D5359;&#xA;      }&#xA;      ni-gauge[ni-control-id='32'] {&#xA;        left: 245px;&#xA;        top: 325px;&#xA;        width: 230px;&#xA;        height: 230px;&#xA;        font-size: 19px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-label[ni-control-id='33'] {&#xA;        left: 327px;&#xA;        top: 305px;&#xA;        width: 66px;&#xA;        height: 16px;&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;        color: #4D5359;&#xA;      }&#xA;      ni-list-box[ni-control-id='38'] {&#xA;        left: 4px;&#xA;        top: 339px;&#xA;        width: 200px;&#xA;        height: 216px;&#xA;        font-size: 19px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-label[ni-control-id='39'] {&#xA;        left: 4px;&#xA;        top: 319px;&#xA;        width: 41px;&#xA;        height: 16px;&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;        color: #4D5359;&#xA;      }&#xA;      ni-tank[ni-control-id='128'] {&#xA;        left: 516px;&#xA;        top: 325px;&#xA;        width: 136px;&#xA;        height: 214px;&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-label[ni-control-id='129'] {&#xA;        left: 552px;&#xA;        top: 305px;&#xA;        width: 65px;&#xA;        height: 16px;&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;        color: #4D5359;&#xA;      }&#xA;      ni-numeric-text-box[ni-control-id='143'] {&#xA;        left: 562px;&#xA;        top: 533px;&#xA;        width: 90px;&#xA;        height: 22px;&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-label[ni-control-id='144'] {&#xA;        left: 562px;&#xA;        top: 513px;&#xA;        width: 46px;&#xA;        height: 16px;&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;        color: #4D5359;&#xA;      }&#xA;      ni-url-image[ni-control-id='149'] {&#xA;        left: 693px;&#xA;        top: 325px;&#xA;        width: 311px;&#xA;        height: 230px;&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-label[ni-control-id='150'] {&#xA;        left: 693px;&#xA;        top: 305px;&#xA;        width: 52px;&#xA;        height: 16px;&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;        color: #4D5359;&#xA;      }&#xA;      ni-data-grid[ni-control-id='154'] {&#xA;        left: 4px;&#xA;        top: 580px;&#xA;        width: 1000px;&#xA;        height: 230px;&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-string-control[ni-control-id='156'] {&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-numeric-text-box[ni-control-id='177'] {&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-numeric-text-box[ni-control-id='178'] {&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-boolean-led[ni-control-id='179'] {&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-numeric-text-box[ni-control-id='181'] {&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-numeric-text-box[ni-control-id='182'] {&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-numeric-text-box[ni-control-id='183'] {&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-string-control[ni-control-id='174'] {&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-boolean-led[ni-control-id='184'] {&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;      }&#xA;      ni-label[ni-control-id='157'] {&#xA;        left: 4px;&#xA;        top: 560px;&#xA;        width: 51px;&#xA;        height: 16px;&#xA;        font-size: 12px;&#xA;        font-family: Segoe UI, sans-serif;&#xA;        font-style: normal;&#xA;        font-weight: normal;&#xA;        color: #4D5359;&#xA;      }&#xA;      &lt;!---End read only section. Additional styles can be added outside this style tag--&gt;&#xA;    &lt;/style&gt;&#xA;    &lt;style&gt;&#xA;      body {&#xA;        background: #e6eff6;&#xA;      }&#xA;    &lt;/style&gt;&#xA;    &lt;!---Read only section. Source panel edits to these document properties will not be persisted--&gt;&#xA;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xA;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xA;    &lt;title&gt;&#x9;'DesktopWeb.gvi'&#xA;    &lt;/title&gt;&#xA;    &lt;!---End read only section. Additional scripts or document properties can be added outside this section--&gt;&#xA;  &lt;/head&gt;&#xA;  &lt;body&gt;&#xA;    &lt;div id=&quot;ni-outdated-browser-message&quot; style=&quot;display:none&quot;&gt;This browser is reporting compatibility with older browser technologies that may perform poorly if it all.&#xA;    &lt;/div&gt;&#xA;    &lt;!---Partially read only section. Custom attributes can be added to these elements but edits to existing attributes will not be persisted--&gt;&#xA;    &lt;section id=&quot;FrontPanelCanvas&quot;&gt;&#xA;      &#xA;      &#xA;      &#xA;      &#xA;      &#xA;      &#xA;      &#xA;      &#xA;      &#xA;      &#xA;      &#xA;      &#xA;      &#xA;      &#xA;      &#xA;      &#xA;      &#xA;      &#xA;    &lt;/section&gt;&#xA;    &lt;!---End partially read only section. Source panel edits to control styles will not be persisted--&gt;&#xA;  &lt;/body&gt;&#xA;&lt;/html&gt;&#xA;" Width="[float]1024" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI">
+			<HtmlChart DataSource="{DataItemBinding Id=15}" DataSourceType="[Type]Double" Height="[float]280" Id="17" Label="[UIModel]26" Left="[float]4" TabIndex="[int]0" Top="[float]4" Width="[float]1000" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<HtmlAxis Adjuster="[RangeAdjuster]ContinuousChart" Id="18" Label="[string]Time" LabelVisibility="[SMVisibility]Collapsed" MajorDivisions="[UIModel]971" MinorTickVisibility="[SMVisibility]Collapsed" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 100, System.Double" ValueType="[Type]Double">
+					<HtmlRangeLabeledDivisions Id="971" TickVisibility="[SMVisibility]Collapsed" />
+				</HtmlAxis>
 				<HtmlAxis Adjuster="[RangeAdjuster]None" Id="19" Label="[string]Power" Orientation="[SMOrientation]Vertical" Range="[IRange]75, 125, System.Double" ValueType="[Type]Double" />
 				<HtmlPlot HorizontalScale="[UIModel]18" Id="20" Label="[string]Plot" VerticalScale="[UIModel]19">
-					<HtmlPlotRenderer Id="21" LineStroke="[SMSolidColorBrush]#ffff0000" LineThickness="[double]1" />
+					<HtmlPlotRenderer Id="21" LineStroke="[SMSolidColorBrush]#ff065fa3" LineThickness="[double]3" PointFill="[SMSolidColorBrush]#ff065fa3" />
 				</HtmlPlot>
-				<HtmlPlot HorizontalScale="[UIModel]18" Id="28" Label="[string]Plot1" VerticalScale="[UIModel]19" />
-				<HtmlPlot HorizontalScale="[UIModel]18" Id="29" Label="[string]Plot2" VerticalScale="[UIModel]19" />
-				<HtmlPlot HorizontalScale="[UIModel]18" Id="90" Label="[string]Plot3" VerticalScale="[UIModel]19" />
-				<HtmlPlot HorizontalScale="[UIModel]18" Id="91" Label="[string]Plot4" VerticalScale="[UIModel]19" />
-				<HtmlPlot HorizontalScale="[UIModel]18" Id="92" Label="[string]Plot5" VerticalScale="[UIModel]19" />
 			</HtmlChart>
 			<HtmlPlotLegend Graph="[UIModel]17" Height="[float]156" Id="22" Left="[float]1011" MinWidth="[float]145" Top="[float]16" Visible="[bool]False" Width="[float]145" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlCursorLegend Graph="[UIModel]17" Height="[float]202" Id="23" Left="[float]9" MinWidth="[float]270" Top="[float]313" Visible="[bool]False" Width="[float]270" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -288,7 +256,7 @@
 				<FontSetting FontFamily="Segoe UI" FontSize="14" Id="35" xmlns="http://www.ni.com/PlatformFramework" />
 			</HtmlGauge>
 			<HtmlLabel Height="[float]16" Id="33" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]32" Left="[float]327" Text="[string]Blade Speed" Top="[float]305" Width="[float]66" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlListBox BaseName="[string]List Box" Height="[float]216" Id="38" Label="[UIModel]39" Left="[float]4" MinHeight="[float]16" MinWidth="[float]50" SelectionMode="[ListBoxSelectionMode]ZeroOrOne" TabIndex="[int]2" Top="[float]339" Value="{DataItemBinding Id=36}" ValueType="[Type]Int32" Width="[float]200" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+			<HtmlListBox BaseName="[string]List Box" Height="[float]216" Id="38" Label="[UIModel]39" Left="[float]14" MinHeight="[float]16" MinWidth="[float]50" SelectionMode="[ListBoxSelectionMode]ZeroOrOne" TabIndex="[int]2" Top="[float]339" Value="{DataItemBinding Id=36}" ValueType="[Type]Int32" Width="[float]200" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<ListBoxSelectorInfo DisplayValue="[string]BDA 1" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[int]0" ValueType="[Type]Int32" />
 				<ListBoxSelectorInfo DisplayValue="[string]BDA 2" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[int]1" ValueType="[Type]Int32" />
 				<ListBoxSelectorInfo DisplayValue="[string]BDA 3" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[int]2" ValueType="[Type]Int32" />
@@ -299,48 +267,77 @@
 				<ListBoxSelectorInfo DisplayValue="[string]FRD 1" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[int]6" ValueType="[Type]Int32" />
 				<ListBoxSelectorInfo DisplayValue="[string]FRD 2" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[int]7" ValueType="[Type]Int32" />
 			</HtmlListBox>
-			<HtmlLabel Height="[float]16" Id="39" LabelOwner="[UIModel]38" Left="[float]4" Text="[string]List Box" Top="[float]319" Visible="[bool]False" Width="[float]41" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="39" LabelOwner="[UIModel]38" Left="[float]14" Text="[string]List Box" Top="[float]319" Visible="[bool]False" Width="[float]41" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlTank BaseName="[string]Tank" Height="[float]214" Id="128" InteractionMode="[NumericPointerInteractionModes]EditRange" Label="[UIModel]129" LabelPresenter="[string]LVFP:G2" Left="[float]516" Maximum="[double]40" MinHeight="[float]75" MinWidth="[float]75" Orientation="[SMOrientation]Vertical" TabIndex="[int]3" Top="[float]325" Value="{DataItemBinding Id=126}" Width="[float]136" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlLabel Height="[float]16" Id="129" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]128" Left="[float]552" Text="[string]Wind Speed" Top="[float]305" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlNumericText BaseName="[string]Numeric" Height="[float]22" Id="143" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]144" Left="[float]562" MinHeight="[float]16" MinWidth="[float]36" TabIndex="[int]4" Top="[float]533" Value="{DataItemBinding Id=141}" ValueFormatter="[string]LVFP:G6" ValueType="[Type]Double" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlLabel Height="[float]16" Id="144" LabelOwner="[UIModel]143" Left="[float]562" Text="[string]Numeric" Top="[float]513" Visible="[bool]False" Width="[float]46" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlUrlImage Alternate="[string]" BaseName="[string]UrlImage" Height="[float]230" Id="149" Label="[UIModel]150" Left="[float]693" Source="{DataItemBinding Id=147}" Stretch="[SMStretch]Uniform" TabIndex="[int]5" Top="[float]325" Width="[float]311" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlLabel Height="[float]16" Id="150" LabelOwner="[UIModel]149" Left="[float]693" Text="[string]Url Image" Top="[float]305" Width="[float]52" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<HtmlDataGrid BaseName="[string]Data Grid" ColumnHeaderVisibility="[Visibility]Visible" ColumnSizeMode="[DataGridColumnSizeMode]StretchNoneColumns" Height="[float]200" Id="154" Label="[UIModel]157" Left="[float]4" MinHeight="[float]100" MinWidth="[float]125" RowHeaderVisibility="[Visibility]Collapsed" RowHeight="[double]22" ShowAddRowsToolBar="[bool]False" TabIndex="[int]6" Top="[float]580" Type="[Type]@8c57d4b17b94458cbca8b9dc88788919" Value="{DataItemBinding Id=152}" Width="[float]1000" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<HtmlDataGridColumn ColumnElement="[UIModel]156" Header="[string]Turbine" Id="155" Index="[int]0" IsReadOnly="[bool]True" Width="[DataGridLength]100">
-					<HtmlStringControl Id="156" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]20" MinWidth="[float]20" Top="[float]0" />
+			<HtmlLabel Height="[float]16" Id="150" LabelOwner="[UIModel]149" Left="[float]693" Text="[string] " Top="[float]305" Width="[float]10" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlDataGrid BaseName="[string]Data Grid" ColumnHeaderVisibility="[Visibility]Visible" ColumnSizeMode="[DataGridColumnSizeMode]StretchNoneColumns" Height="[float]230" Id="154" Label="[UIModel]157" Left="[float]4" MinHeight="[float]100" MinRowHeight="[float]27" MinWidth="[float]125" RowHeaderVisibility="[Visibility]Collapsed" RowHeight="[double]25" ShowAddRowsToolBar="[bool]False" TabIndex="[int]6" Top="[float]580" Type="[Type]@8c57d4b17b94458cbca8b9dc88788919" Value="{DataItemBinding Id=152}" Width="[float]1000" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<HtmlDataGridColumn ColumnElement="[UIModel]156" ContentFont="973" Header="[string]Turbine" Id="155" Index="[int]0" IsReadOnly="[bool]True" Width="[DataGridLength]100">
+					<HtmlStringControl Id="156" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]20" MinWidth="[float]20" Top="[float]0">
+						<FontSetting FontFamily="Segoe UI" FontSize="10" Id="974" xmlns="http://www.ni.com/PlatformFramework" />
+					</HtmlStringControl>
+					<FontSetting FontFamily="Segoe UI" FontSize="10" Id="973" xmlns="http://www.ni.com/PlatformFramework" />
 				</HtmlDataGridColumn>
-				<HtmlDataGridColumn ColumnElement="[UIModel]177" Header="[string]Blade Speed" Id="159" Index="[int]1" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
-					<HtmlNumericText Height="[float]16" Id="177" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]16" MinWidth="[float]36" Top="[float]0" ValueFormatter="[string]LVFP:G6" Width="[float]36" />
+				<HtmlDataGridColumn ColumnElement="[UIModel]177" ContentFont="975" Header="[string]Blade Speed" Id="159" Index="[int]1" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
+					<HtmlNumericText Height="[float]16" Id="177" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]16" MinWidth="[float]36" Top="[float]0" ValueFormatter="[string]LVFP:G6" Width="[float]36">
+						<FontSetting FontFamily="Segoe UI" FontSize="10" Id="976" xmlns="http://www.ni.com/PlatformFramework" />
+					</HtmlNumericText>
+					<FontSetting FontFamily="Segoe UI" FontSize="10" Id="975" xmlns="http://www.ni.com/PlatformFramework" />
 				</HtmlDataGridColumn>
-				<HtmlDataGridColumn ColumnElement="[UIModel]178" Header="[string]Power" Id="161" Index="[int]2" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
-					<HtmlNumericText Height="[float]16" Id="178" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]16" MinWidth="[float]36" Top="[float]0" ValueFormatter="[string]LVFP:G6" Width="[float]36" />
+				<HtmlDataGridColumn ColumnElement="[UIModel]178" ContentFont="977" Header="[string]Power" Id="161" Index="[int]2" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
+					<HtmlNumericText Height="[float]16" Id="178" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]16" MinWidth="[float]36" Top="[float]0" ValueFormatter="[string]LVFP:G6" Width="[float]36">
+						<FontSetting FontFamily="Segoe UI" FontSize="10" Id="978" xmlns="http://www.ni.com/PlatformFramework" />
+					</HtmlNumericText>
+					<FontSetting FontFamily="Segoe UI" FontSize="10" Id="977" xmlns="http://www.ni.com/PlatformFramework" />
 				</HtmlDataGridColumn>
-				<HtmlDataGridColumn ColumnElement="[UIModel]179" Header="[string]Sys Alarm" Id="163" Index="[int]3" IsReadOnly="[bool]True" ValueType="[Type]Boolean" Width="[DataGridLength]100">
-					<HtmlBooleanLED Height="[float]16" Id="179" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]16" MinWidth="[float]16" Top="[float]0" Width="[float]16" />
+				<HtmlDataGridColumn ColumnElement="[UIModel]179" ContentFont="979" Header="[string]Sys Alarm" Id="163" Index="[int]3" IsReadOnly="[bool]True" ValueType="[Type]Boolean" Width="[DataGridLength]100">
+					<HtmlBooleanLED Height="[float]16" Id="179" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]16" MinWidth="[float]16" Top="[float]0" Width="[float]16">
+						<FontSetting FontFamily="Segoe UI" FontSize="10" Id="980" xmlns="http://www.ni.com/PlatformFramework" />
+					</HtmlBooleanLED>
+					<FontSetting FontFamily="Segoe UI" FontSize="10" Id="979" xmlns="http://www.ni.com/PlatformFramework" />
 				</HtmlDataGridColumn>
-				<HtmlDataGridColumn ColumnElement="[UIModel]180" Header="[string]Wind Speed" Id="165" Index="[int]4" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
+				<HtmlDataGridColumn ColumnElement="[UIModel]180" ContentFont="981" Header="[string]Wind Speed" Id="165" Index="[int]4" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
 					<HtmlLVLinearProgressBar Id="180" Left="[float]0" Maximum="[double]100" MinHeight="[float]8" MinWidth="[float]40" Minimum="[double]0" Top="[float]0" Width="[float]40" />
+					<FontSetting FontFamily="Segoe UI" FontSize="10" Id="981" xmlns="http://www.ni.com/PlatformFramework" />
 				</HtmlDataGridColumn>
-				<HtmlDataGridColumn ColumnElement="[UIModel]181" Header="[string]Direction" Id="167" Index="[int]5" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
-					<HtmlNumericText Height="[float]16" Id="181" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]16" MinWidth="[float]36" Top="[float]0" ValueFormatter="[string]LVFP:G6" Width="[float]36" />
+				<HtmlDataGridColumn ColumnElement="[UIModel]181" ContentFont="982" Header="[string]Direction" Id="167" Index="[int]5" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
+					<HtmlNumericText Height="[float]16" Id="181" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]16" MinWidth="[float]36" Top="[float]0" ValueFormatter="[string]LVFP:G6" Width="[float]36">
+						<FontSetting FontFamily="Segoe UI" FontSize="10" Id="983" xmlns="http://www.ni.com/PlatformFramework" />
+					</HtmlNumericText>
+					<FontSetting FontFamily="Segoe UI" FontSize="10" Id="982" xmlns="http://www.ni.com/PlatformFramework" />
 				</HtmlDataGridColumn>
-				<HtmlDataGridColumn ColumnElement="[UIModel]182" Header="[string]E-Total" Id="169" Index="[int]6" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
-					<HtmlNumericText Height="[float]16" Id="182" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]16" MinWidth="[float]36" Top="[float]0" ValueFormatter="[string]LVFP:G6" Width="[float]36" />
+				<HtmlDataGridColumn ColumnElement="[UIModel]182" ContentFont="984" Header="[string]E-Total" Id="169" Index="[int]6" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
+					<HtmlNumericText Height="[float]16" Id="182" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]16" MinWidth="[float]36" Top="[float]0" ValueFormatter="[string]LVFP:G6" Width="[float]36">
+						<FontSetting FontFamily="Segoe UI" FontSize="10" Id="985" xmlns="http://www.ni.com/PlatformFramework" />
+					</HtmlNumericText>
+					<FontSetting FontFamily="Segoe UI" FontSize="10" Id="984" xmlns="http://www.ni.com/PlatformFramework" />
 				</HtmlDataGridColumn>
-				<HtmlDataGridColumn ColumnElement="[UIModel]183" Header="[string]Op Hour" Id="171" Index="[int]7" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
-					<HtmlNumericText Height="[float]16" Id="183" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]16" MinWidth="[float]36" Top="[float]0" ValueFormatter="[string]LVFP:G6" Width="[float]36" />
+				<HtmlDataGridColumn ColumnElement="[UIModel]183" ContentFont="986" Header="[string]Op Hour" Id="171" Index="[int]7" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
+					<HtmlNumericText Height="[float]16" Id="183" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]16" MinWidth="[float]36" Top="[float]0" ValueFormatter="[string]LVFP:G6" Width="[float]36">
+						<FontSetting FontFamily="Segoe UI" FontSize="10" Id="987" xmlns="http://www.ni.com/PlatformFramework" />
+					</HtmlNumericText>
+					<FontSetting FontFamily="Segoe UI" FontSize="10" Id="986" xmlns="http://www.ni.com/PlatformFramework" />
 				</HtmlDataGridColumn>
-				<HtmlDataGridColumn ColumnElement="[UIModel]174" Header="[string]Location" Id="173" Index="[int]8" IsReadOnly="[bool]True" Width="[DataGridLength]100">
-					<HtmlStringControl Id="174" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]20" MinWidth="[float]20" Top="[float]0" />
+				<HtmlDataGridColumn ColumnElement="[UIModel]174" ContentFont="988" Header="[string]Location" Id="173" Index="[int]8" IsReadOnly="[bool]True" Width="[DataGridLength]100">
+					<HtmlStringControl Id="174" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]20" MinWidth="[float]20" Top="[float]0">
+						<FontSetting FontFamily="Segoe UI" FontSize="10" Id="989" xmlns="http://www.ni.com/PlatformFramework" />
+					</HtmlStringControl>
+					<FontSetting FontFamily="Segoe UI" FontSize="10" Id="988" xmlns="http://www.ni.com/PlatformFramework" />
 				</HtmlDataGridColumn>
-				<HtmlDataGridColumn ColumnElement="[UIModel]184" Header="[string]MB" Id="175" Index="[int]9" IsReadOnly="[bool]False" ValueType="[Type]Boolean" Width="[DataGridLength]75">
-					<HtmlBooleanLED Height="[float]16" Id="184" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]16" MinWidth="[float]16" Top="[float]0" Width="[float]16" />
+				<HtmlDataGridColumn ColumnElement="[UIModel]184" ContentFont="990" Header="[string]MB" Id="175" Index="[int]9" IsReadOnly="[bool]False" ValueType="[Type]Boolean" Width="[DataGridLength]100">
+					<HtmlBooleanLED Height="[float]16" Id="184" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]16" MinWidth="[float]16" Top="[float]0" Width="[float]16">
+						<FontSetting FontFamily="Segoe UI" FontSize="10" Id="991" xmlns="http://www.ni.com/PlatformFramework" />
+					</HtmlBooleanLED>
+					<FontSetting FontFamily="Segoe UI" FontSize="10" Id="990" xmlns="http://www.ni.com/PlatformFramework" />
 				</HtmlDataGridColumn>
+				<FontSetting FontFamily="Segoe UI" FontSize="10" Id="972" xmlns="http://www.ni.com/PlatformFramework" />
 			</HtmlDataGrid>
-			<HtmlLabel Height="[float]16" Id="157" LabelOwner="[UIModel]154" Left="[float]4" Text="[string]Data Grid" Top="[float]560" Width="[float]51" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="157" LabelOwner="[UIModel]154" Left="[float]4" Text="[string]Data Grid" Top="[float]560" Visible="[bool]False" Width="[float]51" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</HtmlFrontPanel>
-		<DataItem AdaptToDiagramType="True" BufferSize="25" DataType="Double[]" Id="15" Name="Chart" xmlns="http://www.ni.com/MocCommon" />
+		<DataItem AdaptToDiagramType="True" BufferSize="25" DataType="Double" Id="15" Name="Chart" xmlns="http://www.ni.com/MocCommon" />
 		<DataItem AdaptToDiagramType="True" DataType="Double" Id="30" Name="Blade Speed" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0x0</p.DefaultValue>
 		</DataItem>
