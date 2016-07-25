@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="520A247F70773C9E0EEF2B64ACBDEA5F" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.7.0.1959" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.7.0.0" MinimumSemanticallyEquivalentVersion="4.7.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.7.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.7.0.1959" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.7.0.0" MinimumSemanticallyEquivalentVersion="4.7.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.7.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.7.0.1959" FeatureSetName="Common Language Components" MinimumParsableVersion="4.7.0.1" MinimumSemanticallyEquivalentVersion="4.7.0.1" Name="http://www.ni.com/MocCommon" Version="4.7.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.7.0.1959" FeatureSetName="Html VI" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.7.0.1959" FeatureSetName="Editor" MinimumParsableVersion="4.7.0.4" MinimumSemanticallyEquivalentVersion="4.7.0.4" Name="http://www.ni.com/PlatformFramework" Version="4.7.0.49153" />
+		<ApplicationVersionInfo Build="4.7.0.1959" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]DesktopWeb" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="40" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="0 0 40 15" DataItem="147" Id="148" Label="151">
+				<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="148" Bounds="45 0 30 15" Id="151" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Url Image</p.Text>
+			</NodeLabel>
+		</DiagramUnplacedItems>
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" />
+		<BlockDiagram Id="12">
+			<WhileLoop Bounds="220 450 416 736" DiagramId="43" Id="42">
+				<LoopIteration Bounds="5 706 15 15" Id="44" />
+				<LoopCondition Bounds="375 335 15 15" Id="45" />
+				<Literal Bounds="310 295 25 15" DataType="Boolean" Facade="False Constant" Id="46" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>False</p.Data>
+					<BooleanBehavior />
+				</Literal>
+				<Wire Id="47" Joints="N(46:Out)|(335,300) h(30) v(40) N(45:Input)|(375,340)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wait Bounds="120 15 30 30" Id="48" />
+				<Literal Bounds="40 25 45 16" DataType="UInt32" Facade="Numeric" Id="49" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>250</p.Data>
+					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+				</Literal>
+				<Wire Id="50" Joints="N(49:Out)|(85,30) N(48:time to wait)|(120,30)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="245 175 40 15" DataItem="15" Id="16" Label="27" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="16" Bounds="290 175 31 14" Id="27" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Chart</p.Text>
+				</NodeLabel>
+				<Literal Bounds="40 205 45 16" DataType="Double" Facade="Numeric" Id="51" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>0x4059000000000000</p.Data>
+					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+				</Literal>
+				<Add Bounds="120 170 30 30" Id="52" Terminals="o=80, c0t0v=53, c1t0v=55" />
+				<Wire Id="53" Joints="N(51:Out)|(85,210) h(10) B(1) h(5) B(2) N(58:c0t0v)|(120,210) B(2) v(-35) B(4) N(52:c0t0v)|(120,175) B(4) v(-65) B(6) N(76:c0t0v)|(120,110) B(6) v(-35) N(69:c0t0v)|(120,75) B(1) v(50) N(65:c0t0v)|(120,260)" xmlns="http://www.ni.com/PlatformFramework" />
+				<RandomNumber Bounds="45 175 30 30" Id="54" />
+				<Wire Id="55" Joints="N(54:number (0 to 1\))|(75,190) N(52:c1t0v)|(120,190)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="56" Joints="N(60:number (0 to 1\))|(75,240) h(25) v(-15) N(58:c1t0v)|(120,225)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Add Bounds="120 205 30 30" Id="58" Terminals="o=81, c0t0v=53, c1t0v=56" />
+				<RandomNumber Bounds="45 225 30 30" Id="60" />
+				<Wire Id="63" Joints="N(71:number (0 to 1\))|(75,90) N(69:c1t0v)|(120,90)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Add Bounds="120 255 30 30" Id="65" Terminals="o=82, c0t0v=53, c1t0v=67" />
+				<RandomNumber Bounds="45 260 30 30" Id="66" />
+				<Wire Id="67" Joints="N(66:number (0 to 1\))|(75,275) N(65:c1t0v)|(120,275)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Add Bounds="120 70 30 30" Id="69" Terminals="o=134, c0t0v=53, c1t0v=63" />
+				<RandomNumber Bounds="45 75 30 30" Id="71" />
+				<Wire Id="74" Joints="N(78:number (0 to 1\))|(75,125) N(76:c1t0v)|(120,125)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Add Bounds="120 105 30 30" Id="76" Terminals="o=84, c0t0v=53, c1t0v=74" />
+				<RandomNumber Bounds="45 110 30 30" Id="78" />
+				<Wire Id="80" Joints="N(52:o)|(150,185) h(25) v(25) N(93:c0t0v)|(185,210)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="81" Joints="N(58:o)|(150,220) N(93:c1t0v)|(185,220)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="82" Joints="N(65:o)|(150,270) h(25) v(-30) B(2) N(93:c3t0v)|(185,240) B(2) v(-10) N(93:c2t0v)|(185,230)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="84" Joints="N(76:o)|(150,120) h(20) B(1) N(122:x)|(190,120) B(1) v(130) N(93:c4t0v)|(185,250)" xmlns="http://www.ni.com/PlatformFramework" />
+				<InsertIntoArray Bounds="185 175 40 80" Id="93" Terminals="inArray=101, outArray=106, index0, c0t0v=80, c1t0v=81, c2t0v=82, c3t0v=82, c4t0v=84" VerticalChunkCount="5" />
+				<ArrayLiteral Bounds="60 140 101 26" DataType="Double[]" Facade="Array" Id="99" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>null</p.Data>
+					<ArrayBehavior ElementType="Double" IndexEditorWidth="42">
+						<p.DefaultElementValue>0x0</p.DefaultElementValue>
+					</ArrayBehavior>
+					<Literal Bounds="47 5 40 16" DataType="Double" Facade="Numeric" Id="100">
+						<p.Data>0x0</p.Data>
+						<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+					</Literal>
+				</ArrayLiteral>
+				<Wire Id="101" Joints="N(99:Out)|(161,145) h(14) v(35) N(93:inArray)|(185,180)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="106" Joints="N(93:outArray)|(225,180) N(16:Value)|(248,180)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Literal Bounds="115 50 40 16" DataType="Double" Facade="Numeric" Id="116" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>0x4008000000000000</p.Data>
+					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+				</Literal>
+				<DataAccessor Bounds="120 295 40 15" DataItem="36" Id="37" Label="40" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="37" Bounds="71 295 44 14" Id="40" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>List Box</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="245 125 40 15" DataItem="30" Id="31" Label="34" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="31" Bounds="290 125 69 14" Id="34" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Blade Speed</p.Text>
+				</NodeLabel>
+				<Divide Bounds="190 115 30 30" Id="122" />
+				<Wire Id="124" Joints="N(116:Out)|(155,55) h(20) v(80) N(122:y)|(190,135)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="125" Joints="N(122:x/y)|(220,130) N(31:Value)|(248,130)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Divide Bounds="230 45 30 30" Id="131" />
+				<Literal Bounds="185 85 40 16" DataType="Double" Facade="Numeric" Id="132" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>0x4010000000000000</p.Data>
+					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+				</Literal>
+				<Wire Id="133" Joints="N(132:Out)|(225,90) h(5) v(-10) h(-5) v(-15) N(131:y)|(230,65)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="134" Joints="N(69:o)|(150,85) h(10) v(-35) N(131:x)|(230,50)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="285 50 40 15" DataItem="126" Id="127" Label="130" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="127" Bounds="330 50 66 14" Id="130" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Wind Speed</p.Text>
+				</NodeLabel>
+				<Wire Id="135" Joints="N(131:x/y)|(260,60) h(15) B(1) h(5) v(-5) N(127:Value)|(288,55) B(1) v(35) N(142:Value)|(298,95)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="295 90 40 15" DataItem="141" Id="142" Label="145" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="142" Bounds="340 90 46 14" Id="145" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Numeric</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="245 390 40 15" DataItem="152" Id="153" Label="158" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="@8c57d4b17b94458cbca8b9dc88788919" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="153" Bounds="290 390 53 14" Id="158" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Data Grid</p.Text>
+				</NodeLabel>
+				<ArrayLiteral Bounds="94 390 157 216" DataType="@8c57d4b17b94458cbca8b9dc88788919" Facade="Array" Id="185" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>
+						<Array Lengths="8" IsBinary="True" Compression="GZip">
+							<BinaryElements>H4sIAAAAAAAEAM1UW08aQRTeFRh2RaR4v9Vueksf6AaoVH3wQaCtRmtNoPaBGDssx2bSYYfM7LbBpH+gf7qdsy6IRRsfTFoSPjiXOd+55RimYRi/9Ad/8TM1oaF1RAMmfMr3fRXIsAt+oNyakFBwTkAqbdrZcDfdolssOLWQB6GEHR/CQFJecI7DNmfeAfSb4iv4O2WgtELPi1uvNqBcLnVSyFS5iaBOA3pCeQiai4cqAPmWAe/UBOfgoXtSvyTnqFMpn3ZBTUZCs98DlfMun9Roj3os6CdIwvhpNvpa13WvQij3HfggmeceMhV8LrVaN7jso63gdJUnJGft0aKLdyu6vblJK17ldWlbV13c2j49/XH3VLCee2a3cKp2AgGbaKc04BySqPqf2oT5kDOmqVTqTLELsM6+XUbVlpXbkmidWpZN9NPJ+JtPxn9IWkO6Gco284FYWshUOe2A0+gBdIitFalj8R0kQW9bEzi7nMouyWCAT8zvxJ5TaK4zeclLshj2zcumCCgn0yh86Dl7IpQkpwXrUHjRgpMHWpp4X01iw//tCvy1s9kR3qiZ+ZFmprGz0bpgNYml26Zgz2CPZhHmEOYRFhAWEZYQlhFWEFY1ZEk6fy12ZiQPew3dHg5h/bp4BWsDa5bkZ+Jo5DFOtlrfdUq52YEuPnFGbm5MMx9rTCO3MGZcHNMsjWmW/9TkVwaaJwhlPbRyKbc65Eli2o/iej/6+mQ19CZQzi6izdkTvAMSh5bEu2hHHtiWqV2loNvm/SN9AU3DtMhT42qAjUAy/0t0KJ9pOLjHFTKx2Zg0eT5CWBf6FURHBQnN9YHTCw3TsVNVCA7UH3plfgPTZIyddwYAAA==</BinaryElements>
+							<BinaryElements>H4sIAAAAAAAEAM1UW08aQRTeFRh2RaR4v9Vueksf6Aa3UvXBB4G2Gq01gdoHYuywHJtJhx0ys9sGk/6B/ul2zrooFm18MGlJ+OBc5nznlmOYhmH80h/8xc/EmIbWIQ2ZCCjfC1Qooy4EoXJrQkLJOQaptGl73d1wy2655NQiHkYStgOIQkl5yTmK2pz5+9Bviq8QbHtAaYWelTdfrYPnrXUyyFS5iaBOQ3pMeQSai0cqBPmWAe/UBOfgo3tavyRnqFOZgHZBjcdCs98DVfAvntRoj/os7KdIyvhpNvpa13WvQij3HQQgme8eMBV+Xmu1bnDZQ1vJ6SpfSM7aw0WX71Z0e2ODVvzK67UtXXV5c+vk5MfdU8F67pndwqnaKQRsop3RgHNIo+p/ahPmQ06ZplKZU8XOwTr9dhFVW5ZuS6J1Ylk20U/Hk28xnfwhWQ3ZZiTbLABiaSFX5bQDTqMH0CG2VmSOxHeQBL1tTeDscCq7JIcBPrGgk3hOoLnO5AUvyWPYNy+bIqScTKLwoefsikiSghasA+HHC04eaGnsfTWNDf+3K/DXzuaHeONmFoeamcXOxuuC1aQWbpuCPYU9mkaYQZhFmEOYR1hAWERYQljWkCfZ4rXYuaE87BV0e3gJq9fFK1gZWPOkOJVEI49xstX6juMVpge65MQZhZkRzWyiMY3C3IhxfkSzMKJZ/FNTXBponiB4emieV1i+5Elj2o+Sej8G+mQ19CZQzs7jzdkVvAMSh5bGu2jHHtiWiR2loNvm/UN9AU3DtMhT42qAjVCy4Et8KJ9p2L/HFTKx2Zg0eT5EWBf6FcRHBQnN1YHTCw2TiVNVCA40uPTK/Qa1LzPEdwYAAA==</BinaryElements>
+							<BinaryElements>H4sIAAAAAAAEAM1UW08aQRTeFRh2RaR4v9Vueksf6AZRqj74INBW46UmUPtAjB2WYzPpsENmdttg0j/QP93OWRfEoo0PJi0JH5zLnO/ccgzTMIxf+oO/+JkY09A8pgETPuX7vgpk2AE/UG5VSCg4pyCVNu1suJtu0S0WnGrIg1DCjg9hICkvOCdhizPvAHoN8RX8nRJQWqYXxa31DSiV1topZCrfRlCjAT2lPATNxUMVgHzHgLergnPw0D2pX5IL1KmUTzugxiOh0euCynlXT6q0Sz0W9BIkYfw06z2t67jXIZT7HnyQzHMPmQo+rzWbt7jso63gdJQnJGet4aKL9yu6tblJy175zdq2rrq4tX129uP+qWA9D8xu4VTtBAI20U5pwDkkUfU/tQnzIedMU6nUuWKXYJ1/u4qqLUt3JdE8syyb6Kfj8TefjP+QtIZ0I5Qt5gOxtJCpcNoGp94FaBNbK1In4jtIgt62JnB2OZUdksEAn5jfjj0n0Fxj8oqXZDHs29cNEVBOJlH40HX2RChJTgvWofCiBSePtDR2VEliw//tCvy1s9kh3qiZ+aFmprGz0bpgNYmFu6ZgT2GPphFmEGYR5hDmERYQFhGWEJY1ZEk6fyN2ZigPewXdHg9g9aZ4DSt9a5bkp+Jo5ClOtlLbddZz031dfOKM3MyIZjbWmEZubsQ4P6JZGNEs/qnJL/U1zxBKemil9dzygCeJaT+J6/3o65NV15tAObuMNmdP8DZIHFoS76IdeWBbJnaVgk6L9471BTQN0yLPjesB1gPJ/C/RoXyh4eABV8jEZmPS5OUQYU3oVxAdFSQ0V/tOrzRMxk4VIThQf+CV+Q2oFIlFdwYAAA==</BinaryElements>
+							<BinaryElements>H4sIAAAAAAAEAM1UW08aQRTeFRh2RaR4v9Vueksf6AYpVH3wQaCtRmtNoPaBGDssx2bSYYfM7LbBpH+gf7qdsy6IRRsfTFoSPjiXOd+55RimYRi/9Ad/8TM1oaF1RAMmfMr3fRXIsAt+oNyakFBwTkAqbdopu5tu0S0WnFrIg1DCjg9hICkvOMdhmzPvAPpN8RX8nRJQWqHnxa1XZSiVNjopZKrcRFCnAT2hPATNxUMVgHzLgHdqgnPw0D2pX5Jz1KmUT7ugJiOh2e+BynmXT2q0Rz0W9BMkYfw0G32t67pXIZT7DnyQzHMPmQo+b7RaN7jso63gdJUnJGft0aKLdyu6vblJK17l9ca2rrq4tX16+uPuqWA998xu4VTtBAI20U5pwDkkUfU/tQnzIWdMU6nUmWIXYJ19u4yqLSu3JdE6tSyb6KeT8TefjP+QtIZ0M5Rt5gOxtJCpctoBp9ED6BBbK1LH4jtIgt62JnB2OZVdksEAn5jfiT2n0Fxn8pKXZDHsm5dNEVBOplH40HP2RChJTgvWofCiBScPtDTxvprEhv/bFfhrZ7MjvFEz8yPNTGNno3XBahJLt03BnsEezSLMIcwjLCAsIiwhLCOsIKxqyJJ0/lrszEge9hq6PRzC+nXxCtYG1izJz8TRyGOcbLW+65RzswNdfOKM3NyYZj7WmEZuYcy4OKZZGtMs/6nJrww0TxBKemilcm51yJPEtB/F9X709clq6E2gnF1Em7MneAckDi2Jd9GOPLAtU7tKQbfN+0f6ApqGaZGnxtUAG4Fk/pfoUD7TcHCPK2RiszFp8nyEsC70K4iOChKa6wOnFxqmY6eqEByoP/TK/AZ5uU13dwYAAA==</BinaryElements>
+							<BinaryElements>H4sIAAAAAAAEAM1UW08aQRTeFRh2RaR4v9Vueksf6AaoVH3wQaCtRmtNoPaBGDssx2bSYYfM7LbBpH+gf7qdsy6IRRsfTFoSPjiXOd+55RimYRi/9Ad/8TM1oaF1RAMmfMr3fRXIsAt+oNyakFBwTkAqbdrZcDfdolssOLWQB6GEHR/CQFJecI7DNmfeAfSb4iv4O2WgtELPi1uvNqBcLnVSyFS5iaBOA3pCeQiai4cqAPmWAe/UBOfgoXtSvyTnqFMpn3ZBTUZCs98DlfMun9Roj3os6CdIwvhpNvpa13WvQij3HfggmeceMhV8LrVaN7jso63gdJUnJGft0aKLdyu6vblJK17ldWlbV13c2j49/XH3VLCee2a3cKp2AgGbaKc04BySqPqf2oT5kDOmqVTqTLELsM6+XUbVlpXbkmidWpZN9NPJ+JtPxn9IWkO6Gco284FYWshUOe2A0+gBdIitFalj8R0kQW9bEzi7nMouyWCAT8zvxJ5TaK4zeclLshj2zcumCCgn0yh86Dl7IpQkpwXrUHjRgpMHWpp4X01iw//tCvy1s9kR3qiZ+ZFmprGz0bpgNYml26Zgz2CPZhHmEOYRFhAWEZYQlhFWEFY1ZEk6fy12ZiQPew3dHg5h/bp4BWsDa5bkZ+Jo5DFOtlrfdSq52YEuPnFGbm5MMx9rTCO3MGZcHNMsjWmW/9TkVwaaJwjlUsEpl3KrQ54kpv0orvejr09WQ28C5ewi2pw9wTsgcWhJvIt25IFtmdpVCrpt3j/SF9A0TIs8Na4G2Agk879Eh/KZhoN7XCETm41Jk+cjhHWhX0F0VJDQXB84vdAwHTtVheBA/aFX5jctaS1ydwYAAA==</BinaryElements>
+							<BinaryElements>H4sIAAAAAAAEAM1UW08aQRTeFRh2RaR4v9Vueksf6AaoeHnwQaCtxktNoPaBGDssx2bSYYfM7LbBpH+gf7qdsy6KRRsfTFoSPjiXOd+55RimYRi/9Ad/8TMxpqF1RAMmfMr3fBXIsAt+oNyakFBwTkAqbdpeczfcolssOLWQB6GEbR/CQFJecI7DNmfePvSb4iv422WgtELPi5tv1qBcLnVSyFS5jaBOA3pCeQiai4cqAPmOAe/UBOfgoXtSvyTnqFMpn3ZBjUdCs98DlfMun9Roj3os6CdIwvhpNvpa13WvQyj3PfggmeceMBV8LrVat7jsoa3gdJUnJGft4aKL9yu6vbFBK15lvbSlqy5ubp2e/rh/KljPA7NbOFU7gYBNtFMacA5JVP1PbcJ8yBnTVCp1ptgFWGffLqNqy9JdSbROLcsm+ul4/M0n4z8krSHdDGWb+UAsLWSqnHbAafQAOsTWitSx+A6SoLetCZwdTmWXZDDAJ+Z3Ys8JNNeZvOQlWQz79nVTBJSTSRQ+9JxdEUqS04J1ILxowckjLY0dVpPY8H+7An/tbHaIN2pmfqiZaexstC5YTWLhrinYU9ijaYQZhFmEOYR5hAWERYQlhGUNWZLO34idGcrDXkG3x1ewelO8hpWBNUvyU3E08hQnW63vOOu56YEuPnFGbmZEMxtrTCM3N2KcH9EsjGgW/9TklwaaZwjlUsEpl3PLVzxJTPtJXO9HX5+sht4EytlFtDm7gndA4tCSeBftyAPbMrGjFHTbvH+kL6BpmBZ5blwPsBFI5n+JDuULDfsPuEImNhuTJi+HCOtCv4LoqCChuTpweqVhMnaqCsGB+ldemd9LIpIrdwYAAA==</BinaryElements>
+							<BinaryElements>H4sIAAAAAAAEAM1UW08aQRTeFRh2RaR4v9Vueksf6AZUqj74oFCr8VJTqH0gxA7LsZl02CEzu20w6R/on27nrIti0cYHk5aED85lznduOYZpGMYv/cFf/IyNaGgc04AJn/J9XwUy7IAfKLciJBScU5BKm7bW3HW36BYLTiXkQShhy4cwkJQXnJOwxZl3AL26+Ar+1gpQWqbnxY3VNVhZKbVTyFS+jaBKA3pKeQiai4cqALnLgLcrgnPw0D2pX5Jz1KmUTzugRiOh3uuCynmXTyq0Sz0W9BIkYfw0az2t67jXIZT7DnyQzHMPmQo+lxqNW1z20VZwOsoTkrPWYNHF+xXdWl+nZa/8prSpqy5ubDabP+6fCtbzwOwWTtVOIGAT7ZQGnEMSVf9TmzAfcsY0lUqdKXYB1tm3y6jasnBXEo2mZdlEPx2Nv/lk/IekNaTroWwxH4ilhcwOp21wal2ANrG1InUivoMk6G1rAmebU9khGQzwifnt2HMMzVUmL3lJFsO+fV0XAeVkHIX3XWdPhJLktGAdCi9acPJISyNHO0ls+L9dgb92NjvAGzUzP9DMNHY2WhesJjF31xTsCezRJMIUwjTCDMIswhzCPMICwqKGLEnnb8TODORhL6Hb4ytYvilew1LfmiX5iTgaeYqT3f1QdUq5yb4uPnFGbmpIMx1rTCM3M2ScHdLMDWnm/9TkF/qaZwiremira7nFK54kpv0krvejr09WTW8C5ewi2pw9wdsgcWhJvIt25IFtGdtWCjot3jvWF9A0TIs8N64HWAsk879Eh/KFhoMHXCETm41Jk5cDhFWhX0F0VJDQXO47vdIwHjvtCMGB+ldemd+dpSW7dwYAAA==</BinaryElements>
+							<BinaryElements>H4sIAAAAAAAEAM1UW08aQRTeFRh2RaR4v9Vueksf6AZRqj74oFCr8VJTqH0gxA7LsZl02CEzu20w6R/on27nrIti0cYHk5aED85lznduOYZpGMYv/cFf/IyNaGgc04AJn/J9XwUy7IAfKLciJBScU5BKm7bW3HW36BYLTiXkQShhy4cwkJQXnJOwxZl3AL26+Ar+VgkoLdPz4sbqGpRKK+0UMpVvI6jSgJ5SHoLm4qEKQO4y4O2K4Bw8dE/ql+QcdSrl0w6o0Uio97qgct7lkwrtUo8FvQRJGD/NWk/rOu51COW+Ax8k89xDpoLPK43GLS77aCs4HeUJyVlrsOji/Ypura/Tsld+s7Kpqy5ubDabP+6fCtbzwOwWTtVOIGAT7ZQGnEMSVf9TmzAfcsY0lUqdKXYB1tm3y6jasnBXEo2mZdlEPx2Nv/lk/IekNaTroWwxH4ilhcwOp21wal2ANrG1InUivoMk6G1rAmebU9khGQzwifnt2HMMzVUmL3lJFsO+fV0XAeVkHIX3XWdPhJLktGAdCi9acPJISyNHO0ls+L9dgb92NjvAGzUzP9DMNHY2WhesJjF31xTsCezRJMIUwjTCDMIswhzCPMICwqKGLEnnb8TODORhL6Hb4ytYvilew1LfmiX5iTgaeYqT3f1QdUq5yb4uPnFGbmpIMx1rTCM3M2ScHdLMDWnm/9TkF/qaZwiremir5dziFU8S034S1/vR1yerpjeBcnYRbc6e4G2QOLQk3kU78sC2jG0rBZ0W7x3rC2gapkWeG9cDrAWS+V+iQ/lCw8EDrpCJzcakycsBwqrQryA6KkhoLvedXmkYj512hOBA/SuvzG+acejpdwYAAA==</BinaryElements>
+						</Array>
+					</p.Data>
+					<ArrayBehavior ElementType="@edb65463688e49a9aeeda7bfeb8b0a16" IndexEditorWidth="42">
+						<p.DefaultElementValue>
+							<Cluster>
+								<Field1>""</Field1>
+								<Field2>0x0</Field2>
+								<Field3>0x0</Field3>
+								<Field4>False</Field4>
+								<Field5>0x0</Field5>
+								<Field6>0x0</Field6>
+								<Field7>0x0</Field7>
+								<Field8>0x0</Field8>
+								<Field9>""</Field9>
+								<Field10>False</Field10>
+							</Cluster>
+						</p.DefaultElementValue>
+					</ArrayBehavior>
+					<ClusterLiteral Bounds="47 5 96 206" DataType="@edb65463688e49a9aeeda7bfeb8b0a16" Facade="Cluster" Id="186">
+						<p.Data>
+							<Cluster>
+								<Field1>FRD 2</Field1>
+								<Field2>0x0</Field2>
+								<Field3>0x0</Field3>
+								<Field4>False</Field4>
+								<Field5>0x0</Field5>
+								<Field6>0x0</Field6>
+								<Field7>0x0</Field7>
+								<Field8>0x0</Field8>
+								<Field9>30, 35</Field9>
+								<Field10>False</Field10>
+							</Cluster>
+						</p.Data>
+						<ClusterBehavior AutoArrange="ArrangeVertically" />
+						<Literal Bounds="2 2 75 15" DataType="String" Facade="String" Id="187" Label="188">
+							<p.Data>FRD 2</p.Data>
+							<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
+						</Literal>
+						<NodeLabel AttachedTo="187" Bounds="2 -16 45 15" Id="188" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Turbine</p.Text>
+						</NodeLabel>
+						<Literal Bounds="2 21 40 16" DataType="Double" Facade="Numeric" Id="189" Label="190">
+							<p.Data>0x0</p.Data>
+							<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+						</Literal>
+						<NodeLabel AttachedTo="189" Bounds="2 3 70 15" Id="190" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Blade Speed</p.Text>
+						</NodeLabel>
+						<Literal Bounds="2 41 40 16" DataType="Double" Facade="Numeric" Id="191" Label="192">
+							<p.Data>0x0</p.Data>
+							<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+						</Literal>
+						<NodeLabel AttachedTo="191" Bounds="2 23 35 15" Id="192" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Power</p.Text>
+						</NodeLabel>
+						<Literal Bounds="2 61 26 15" DataType="Boolean" Facade="False Constant" Id="193" Label="194">
+							<p.Data>False</p.Data>
+							<BooleanBehavior />
+						</Literal>
+						<NodeLabel AttachedTo="193" Bounds="2 43 60 15" Id="194" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Sys Alarm</p.Text>
+						</NodeLabel>
+						<Literal Bounds="2 80 40 16" DataType="Double" Facade="Numeric" Id="195" Label="196">
+							<p.Data>0x0</p.Data>
+							<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+						</Literal>
+						<NodeLabel AttachedTo="195" Bounds="2 62 70 15" Id="196" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Wind Speed</p.Text>
+						</NodeLabel>
+						<Literal Bounds="2 100 40 16" DataType="Double" Facade="Numeric" Id="197" Label="198">
+							<p.Data>0x0</p.Data>
+							<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+						</Literal>
+						<NodeLabel AttachedTo="197" Bounds="2 82 50 15" Id="198" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Direction</p.Text>
+						</NodeLabel>
+						<Literal Bounds="2 120 40 16" DataType="Double" Facade="Numeric" Id="199" Label="200">
+							<p.Data>0x0</p.Data>
+							<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+						</Literal>
+						<NodeLabel AttachedTo="199" Bounds="2 102 40 15" Id="200" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>E-Total</p.Text>
+						</NodeLabel>
+						<Literal Bounds="2 140 40 16" DataType="Double" Facade="Numeric" Id="201" Label="202">
+							<p.Data>0x0</p.Data>
+							<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+						</Literal>
+						<NodeLabel AttachedTo="201" Bounds="2 122 50 15" Id="202" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Op Hour</p.Text>
+						</NodeLabel>
+						<Literal Bounds="2 160 70 15" DataType="String" Facade="String" Id="203" Label="204">
+							<p.Data>30, 35</p.Data>
+							<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
+						</Literal>
+						<NodeLabel AttachedTo="203" Bounds="2 142 50 15" Id="204" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Location</p.Text>
+						</NodeLabel>
+						<Literal Bounds="2 179 26 15" DataType="Boolean" Facade="False Constant" Id="205" Label="206">
+							<p.Data>False</p.Data>
+							<BooleanBehavior />
+						</Literal>
+						<NodeLabel AttachedTo="205" Bounds="2 161 20 15" Id="206" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>MB</p.Text>
+						</NodeLabel>
+					</ClusterLiteral>
+				</ArrayLiteral>
+				<Wire Id="207" Joints="N(185:Out)|(251,395) N(153:Value)|(248,395)" xmlns="http://www.ni.com/PlatformFramework" />
+			</WhileLoop>
+		</BlockDiagram>
+		<HtmlFrontPanel Height="[float]850" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]1024" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI">
+			<HtmlChart DataSource="{DataItemBinding Id=15}" DataSourceType="[Type]Double[]" Height="[float]280" Id="17" Label="[UIModel]26" Left="[float]4" TabIndex="[int]0" Top="[float]4" Width="[float]1000" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<HtmlAxis Adjuster="[RangeAdjuster]ContinuousChart" Id="18" Label="[string]Time" LabelVisibility="[SMVisibility]Collapsed" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 100, System.Double" ValueType="[Type]Double" />
+				<HtmlAxis Adjuster="[RangeAdjuster]None" Id="19" Label="[string]Power" Orientation="[SMOrientation]Vertical" Range="[IRange]75, 125, System.Double" ValueType="[Type]Double" />
+				<HtmlPlot HorizontalScale="[UIModel]18" Id="20" Label="[string]Plot" VerticalScale="[UIModel]19">
+					<HtmlPlotRenderer Id="21" LineStroke="[SMSolidColorBrush]#ffff0000" LineThickness="[double]1" />
+				</HtmlPlot>
+				<HtmlPlot HorizontalScale="[UIModel]18" Id="28" Label="[string]Plot1" VerticalScale="[UIModel]19" />
+				<HtmlPlot HorizontalScale="[UIModel]18" Id="29" Label="[string]Plot2" VerticalScale="[UIModel]19" />
+				<HtmlPlot HorizontalScale="[UIModel]18" Id="90" Label="[string]Plot3" VerticalScale="[UIModel]19" />
+				<HtmlPlot HorizontalScale="[UIModel]18" Id="91" Label="[string]Plot4" VerticalScale="[UIModel]19" />
+				<HtmlPlot HorizontalScale="[UIModel]18" Id="92" Label="[string]Plot5" VerticalScale="[UIModel]19" />
+			</HtmlChart>
+			<HtmlPlotLegend Graph="[UIModel]17" Height="[float]156" Id="22" Left="[float]1011" MinWidth="[float]145" Top="[float]16" Visible="[bool]False" Width="[float]145" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlCursorLegend Graph="[UIModel]17" Height="[float]202" Id="23" Left="[float]9" MinWidth="[float]270" Top="[float]313" Visible="[bool]False" Width="[float]270" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlScaleLegend Graph="[UIModel]17" Height="[float]60" Id="24" Left="[float]1011" MinWidth="[float]145" Top="[float]182" Visible="[bool]False" Width="[float]145" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlGraphTools Graph="[UIModel]17" Height="[float]35" Id="25" Left="[float]52" MinWidth="[float]120" Top="[float]20" Width="[float]120" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="26" LabelOwner="[UIModel]17" Left="[float]4" Text="[string]Chart" Top="[float]-16" Width="[float]29" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlGauge BaseName="[string]Gauge" Height="[float]230" Id="32" InteractionMode="[NumericPointerInteractionModes]EditRange" Interval="[float]2" Label="[UIModel]33" LabelPresenter="[string]LVFP:G2" Left="[float]245" MajorRangeDivisionsMode="[RangeDivisionsMode]Auto" MajorTickVisibility="[SMVisibility]Visible" Maximum="[double]40" MinHeight="[float]125" MinWidth="[float]125" MinorTickVisibility="[SMVisibility]Collapsed" RangeLabelsVisibility="[SMVisibility]Visible" TabIndex="[int]1" Top="[float]325" Value="{DataItemBinding Id=30}" Width="[float]230" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<FontSetting FontFamily="Segoe UI" FontSize="14" Id="35" xmlns="http://www.ni.com/PlatformFramework" />
+			</HtmlGauge>
+			<HtmlLabel Height="[float]16" Id="33" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]32" Left="[float]327" Text="[string]Blade Speed" Top="[float]305" Width="[float]66" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlListBox BaseName="[string]List Box" Height="[float]216" Id="38" Label="[UIModel]39" Left="[float]4" MinHeight="[float]16" MinWidth="[float]50" SelectionMode="[ListBoxSelectionMode]ZeroOrOne" TabIndex="[int]2" Top="[float]339" Value="{DataItemBinding Id=36}" ValueType="[Type]Int32" Width="[float]200" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<ListBoxSelectorInfo DisplayValue="[string]BDA 1" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[int]0" ValueType="[Type]Int32" />
+				<ListBoxSelectorInfo DisplayValue="[string]BDA 2" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[int]1" ValueType="[Type]Int32" />
+				<ListBoxSelectorInfo DisplayValue="[string]BDA 3" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[int]2" ValueType="[Type]Int32" />
+				<ListBoxSelectorInfo DisplayValue="[string]BDA 4" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[int]3" ValueType="[Type]Int32" />
+				<ListBoxSelectorInfo DisplayValue="[string]BDA 5" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[int]4" ValueType="[Type]Int32" />
+				<ListBoxSelectorInfo DisplayValue="[string]BDA 6" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[int]5" ValueType="[Type]Int32" />
+				<FontSetting FontFamily="Segoe UI" FontSize="14" Id="41" xmlns="http://www.ni.com/PlatformFramework" />
+				<ListBoxSelectorInfo DisplayValue="[string]FRD 1" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[int]6" ValueType="[Type]Int32" />
+				<ListBoxSelectorInfo DisplayValue="[string]FRD 2" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[int]7" ValueType="[Type]Int32" />
+			</HtmlListBox>
+			<HtmlLabel Height="[float]16" Id="39" LabelOwner="[UIModel]38" Left="[float]4" Text="[string]List Box" Top="[float]319" Visible="[bool]False" Width="[float]41" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlTank BaseName="[string]Tank" Height="[float]214" Id="128" InteractionMode="[NumericPointerInteractionModes]EditRange" Label="[UIModel]129" LabelPresenter="[string]LVFP:G2" Left="[float]516" Maximum="[double]40" MinHeight="[float]75" MinWidth="[float]75" Orientation="[SMOrientation]Vertical" TabIndex="[int]3" Top="[float]325" Value="{DataItemBinding Id=126}" Width="[float]136" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="129" LabelAlignment="[PartAlignment]TopCenter" LabelOwner="[UIModel]128" Left="[float]552" Text="[string]Wind Speed" Top="[float]305" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlNumericText BaseName="[string]Numeric" Height="[float]22" Id="143" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]144" Left="[float]562" MinHeight="[float]16" MinWidth="[float]36" TabIndex="[int]4" Top="[float]533" Value="{DataItemBinding Id=141}" ValueFormatter="[string]LVFP:G6" ValueType="[Type]Double" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="144" LabelOwner="[UIModel]143" Left="[float]562" Text="[string]Numeric" Top="[float]513" Visible="[bool]False" Width="[float]46" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlUrlImage Alternate="[string]" BaseName="[string]UrlImage" Height="[float]230" Id="149" Label="[UIModel]150" Left="[float]693" Source="{DataItemBinding Id=147}" Stretch="[SMStretch]Uniform" TabIndex="[int]5" Top="[float]325" Width="[float]311" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="150" LabelOwner="[UIModel]149" Left="[float]693" Text="[string]Url Image" Top="[float]305" Width="[float]52" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlDataGrid BaseName="[string]Data Grid" ColumnHeaderVisibility="[Visibility]Visible" ColumnSizeMode="[DataGridColumnSizeMode]StretchNoneColumns" Height="[float]200" Id="154" Label="[UIModel]157" Left="[float]4" MinHeight="[float]100" MinWidth="[float]125" RowHeaderVisibility="[Visibility]Collapsed" RowHeight="[double]22" ShowAddRowsToolBar="[bool]False" TabIndex="[int]6" Top="[float]580" Type="[Type]@8c57d4b17b94458cbca8b9dc88788919" Value="{DataItemBinding Id=152}" Width="[float]1000" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<HtmlDataGridColumn ColumnElement="[UIModel]156" Header="[string]Turbine" Id="155" Index="[int]0" IsReadOnly="[bool]True" Width="[DataGridLength]100">
+					<HtmlStringControl Id="156" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]20" MinWidth="[float]20" Top="[float]0" />
+				</HtmlDataGridColumn>
+				<HtmlDataGridColumn ColumnElement="[UIModel]177" Header="[string]Blade Speed" Id="159" Index="[int]1" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
+					<HtmlNumericText Height="[float]16" Id="177" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]16" MinWidth="[float]36" Top="[float]0" ValueFormatter="[string]LVFP:G6" Width="[float]36" />
+				</HtmlDataGridColumn>
+				<HtmlDataGridColumn ColumnElement="[UIModel]178" Header="[string]Power" Id="161" Index="[int]2" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
+					<HtmlNumericText Height="[float]16" Id="178" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]16" MinWidth="[float]36" Top="[float]0" ValueFormatter="[string]LVFP:G6" Width="[float]36" />
+				</HtmlDataGridColumn>
+				<HtmlDataGridColumn ColumnElement="[UIModel]179" Header="[string]Sys Alarm" Id="163" Index="[int]3" IsReadOnly="[bool]True" ValueType="[Type]Boolean" Width="[DataGridLength]100">
+					<HtmlBooleanLED Height="[float]16" Id="179" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]16" MinWidth="[float]16" Top="[float]0" Width="[float]16" />
+				</HtmlDataGridColumn>
+				<HtmlDataGridColumn ColumnElement="[UIModel]180" Header="[string]Wind Speed" Id="165" Index="[int]4" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
+					<HtmlLVLinearProgressBar Id="180" Left="[float]0" Maximum="[double]100" MinHeight="[float]8" MinWidth="[float]40" Minimum="[double]0" Top="[float]0" Width="[float]40" />
+				</HtmlDataGridColumn>
+				<HtmlDataGridColumn ColumnElement="[UIModel]181" Header="[string]Direction" Id="167" Index="[int]5" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
+					<HtmlNumericText Height="[float]16" Id="181" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]16" MinWidth="[float]36" Top="[float]0" ValueFormatter="[string]LVFP:G6" Width="[float]36" />
+				</HtmlDataGridColumn>
+				<HtmlDataGridColumn ColumnElement="[UIModel]182" Header="[string]E-Total" Id="169" Index="[int]6" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
+					<HtmlNumericText Height="[float]16" Id="182" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]16" MinWidth="[float]36" Top="[float]0" ValueFormatter="[string]LVFP:G6" Width="[float]36" />
+				</HtmlDataGridColumn>
+				<HtmlDataGridColumn ColumnElement="[UIModel]183" Header="[string]Op Hour" Id="171" Index="[int]7" IsReadOnly="[bool]True" ValueType="[Type]Double" Width="[DataGridLength]100">
+					<HtmlNumericText Height="[float]16" Id="183" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]16" MinWidth="[float]36" Top="[float]0" ValueFormatter="[string]LVFP:G6" Width="[float]36" />
+				</HtmlDataGridColumn>
+				<HtmlDataGridColumn ColumnElement="[UIModel]174" Header="[string]Location" Id="173" Index="[int]8" IsReadOnly="[bool]True" Width="[DataGridLength]100">
+					<HtmlStringControl Id="174" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]20" MinWidth="[float]20" Top="[float]0" />
+				</HtmlDataGridColumn>
+				<HtmlDataGridColumn ColumnElement="[UIModel]184" Header="[string]MB" Id="175" Index="[int]9" IsReadOnly="[bool]False" ValueType="[Type]Boolean" Width="[DataGridLength]75">
+					<HtmlBooleanLED Height="[float]16" Id="184" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]16" MinWidth="[float]16" Top="[float]0" Width="[float]16" />
+				</HtmlDataGridColumn>
+			</HtmlDataGrid>
+			<HtmlLabel Height="[float]16" Id="157" LabelOwner="[UIModel]154" Left="[float]4" Text="[string]Data Grid" Top="[float]560" Width="[float]51" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+		</HtmlFrontPanel>
+		<DataItem AdaptToDiagramType="True" BufferSize="25" DataType="Double[]" Id="15" Name="Chart" xmlns="http://www.ni.com/MocCommon" />
+		<DataItem AdaptToDiagramType="True" DataType="Double" Id="30" Name="Blade Speed" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x0</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="Int32" Id="36" Name="List Box" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>-1</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Double" Id="126" Name="Wind Speed" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Double" Id="141" Name="Numeric" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="String" Id="147" Name="Url Image" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>http://107.1.228.34/axis-cgi/mjpg/video.cgi?resolution=640x480&amp;amp;compression=50&amp;amp;dummy=1455550655535</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="@8c57d4b17b94458cbca8b9dc88788919" Id="152" Name="Data Grid" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="8c57d4b17b94458cbca8b9dc88788919">
+			<VariableArray DereferenceType="@edb65463688e49a9aeeda7bfeb8b0a16" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="edb65463688e49a9aeeda7bfeb8b0a16">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Turbine" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Blade Speed" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Power" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Sys Alarm" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Wind Speed" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Direction" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="E-Total" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Op Hour" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Location" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="MB" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
